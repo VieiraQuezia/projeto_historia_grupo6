@@ -12,6 +12,7 @@ import Img3 from "../assets/conflitosSecXX/fascismoItaliano/img3.jpg";
 import NavAnuncio from '../components/cardAnuncio'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import BtnCurtida from '../components/botaoCurtida'
 const CardComNav = () => {
 
   return (
@@ -53,7 +54,10 @@ Até o símbolo do fascismo foi retirado da história romana, pois usou-se, para
 
 
             </p>
+
           </div>
+          <BtnCurtida id="Fascismo-Italiano" />
+
         </div>
       </nav>
     </div>

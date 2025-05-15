@@ -8,6 +8,7 @@ import Img2 from "/2crise29.png";
 import NavAnuncio from '../components/cardAnuncio'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import BtnCurtida from '../components/botaoCurtida'
 const CardComNav = () => {
 
   return (
@@ -35,6 +36,8 @@ const CardComNav = () => {
 
             </p>
           </div>
+                                <BtnCurtida id="Crise-1929" />
+
         </div>
 
 
@@ -53,6 +56,8 @@ const CardComNav = () => {
 
             </p>
           </div>
+                                <BtnCurtida id="Crise-1929" />
+
         </div>
       </nav>
     </div>
