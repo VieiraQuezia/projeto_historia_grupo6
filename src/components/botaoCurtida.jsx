@@ -64,6 +64,7 @@ const BotaoCurtida = ({ id }) => {
       >
         <i className="fa-solid fa-thumbs-up"></i>
       </button>
+      <span className="contador-curtidas">{total || 0}</span>
 
       <button
         onClick={handleNaoGostei}
@@ -73,7 +74,6 @@ const BotaoCurtida = ({ id }) => {
         <i className="fa-solid fa-thumbs-down"></i>
       </button>
 
-      <span className="contador-curtidas">{total || 0} curtidas</span>
     </div>
   );
 };

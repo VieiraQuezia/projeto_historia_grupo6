@@ -5,21 +5,27 @@
 
 .naoGostei-ativo{
     background-color:transparent;
+        color: #fff;
+      
 }
 
 .desativado{
     background-color: transparent;
 }
 
-.bloco{
-    display: flex;
-    justify-content: center;
-    align-items: first baseline;
-    gap: 10px;
-}
 
 button{
     width: 50px;
     height: 50px;
     border: none;
+}
+
+.botoes-curtida{
+    display: flex;
+    flex-direction: row;
+}
+
+.contador-curtidas{
+    padding-top: 12%;
+    /* padding-right: 12%; */
 }

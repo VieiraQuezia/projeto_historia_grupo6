@@ -45,6 +45,9 @@ function NavBar() {
             <li>
               <Link to="/revolucaoRussa">Revolução Russa</Link>
             </li>
+            <li>
+              <Link to="/ranking">Ranking</Link>
+            </li>
           </ul>
         </nav>
       )}
