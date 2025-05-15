@@ -17,7 +17,42 @@ header h1{
   height: 5%;
 }
   
-.Menu{
-  width: 5%;
-  height: 5%;
+
+/* -------------------------------------------------- */
+.bx-menu{
+color: #f0f0f0;    
+font-size: 3vw;
+border-style: none;
+border-color: #849cc8;
+
+}
+.menu {
+    background-color: #f0f0f0; /* Cor de fundo do menu */
+    padding: 3%; /* Preenchimento interno */
+    position: absolute; /* Para posicionar o menu */
+    top:85px; /* Ajuste conforme necessário */
+    right: 0; /* Alinhado à esquerda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para o menu */
+    display: flex;
+    align-items:flex-end;
+    
+}
+
+.menu ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+.menu li {
+    margin: 10px 0; /* Margem entre os itens do menu */
+}
+
+.menu a:hover {
+    color: rgb(206, 195, 195); /* Cor do texto ao passar o mouse */
+  
+}
+
+.menu a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: black; /* Cor do texto */
 }

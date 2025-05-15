@@ -24,12 +24,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
-          {/* <Route path='/canudos' element={<GuerraCanudos/>} />
-          <Route path='/contestado' element={<GuerraContestado/>} />
+          <Route path='/canudos' element={<GuerraCanudos/>} /> 
+          {/* <Route path='/contestado' element={<GuerraContestado/>} />
           <Route path='/primeira-guerra' element={<PrimeiraGuerra/>} />
           <Route path='/revolucao-russa' element={<RevolucaoRussas/>} /> */}
           <Route path='/fascismo' element={<FascismoItaliano/>} />
-          {/* <Route path='/revolucao-30' element={<Revolucao30/>} />
+          {/* <Route path='/revolucao-1930' element={<Revolucao30/>} />
           <Route path='/crise-29' element={<Crise29/>} /> */}
           
                 

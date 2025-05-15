@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Img1 from "../assets/anuncio/anuncio1.avif";
-import Img2 from "../assets/anuncio/anucio2.webp";
+import Img2 from "../assets/anuncio/anuncio2.webp";
 import Img3 from "../assets/anuncio/anuncio3.avif";
 import Img4 from "../assets/anuncio/anuncio4.jpg";
 
