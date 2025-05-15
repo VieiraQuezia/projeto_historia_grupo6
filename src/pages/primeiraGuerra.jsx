@@ -46,7 +46,7 @@ const CardComNav = () => {
           </div>
 
           <div className="card">
-            <img src={Img2} alt="Imagem fixa" className="imgespecifico" />
+            <img src={Img2} alt="Imagem fixa" className="static-img" />
 
             <div className="card-content">
               <p className="card-text">
