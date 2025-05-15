@@ -124,3 +124,29 @@ padding: 24px;
     margin-top: auto;
     margin-bottom: auto;
   }
+
+  /* ---------------------------------------------------- RANKING -------------------------------------------------- */
+  .resumo-curtidas {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.resumo-curtidas h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.resumo-curtidas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resumo-curtidas li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+

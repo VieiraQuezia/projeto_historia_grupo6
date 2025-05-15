@@ -1,64 +1,48 @@
 import { useEffect, useState } from "react";
-import "./zpages.css"; // você pode criar estilos semelhantes ao do wireframe
+import "./zpages.css"
 
-const Ranking = () => {
-  const [curtidas, setCurtidas] = useState([]);
-  const [naoCurtidas, setNaoCurtidas] = useState([]);
+import NavAnuncio from "../components/cardAnuncio";
+import Header from "../components/header";
+import Footer from "../components/footer";
+
+const nomesPaginas = {
+  "canudos": "Guerra de Canudos",
+  "contestado": "Guerra do Contestado",
+  "primeira-guerra": "Primeira Guerra Mundial",
+  "revolucao-russa": "Revolução Russa",
+  "fascismo": "Fascismo Italiano",
+  "crise-29": "Crise de 1929",
+  "revolucao-1930": "Revolução de 1930"
+};
+
+const ResumoCurtidas = () => {
+  const [dadosCurtidas, setDadosCurtidas] = useState({});
 
   useEffect(() => {
-    const armazenado = localStorage.getItem("curtidas");
-    const dados = armazenado ? JSON.parse(armazenado) : {};
-
-    const listaCurtidas = [];
-    const listaNaoCurtidas = [];
-
-    for (const id in dados) {
-      const nome = formatarNome(id);
-      const curtida = dados[id].curtida;
-      const total = dados[id].total || 0;
-
-      if (curtida === "gostei") {
-        listaCurtidas.push({ nome, total });
-      } else if (curtida === "naoGostei") {
-        listaNaoCurtidas.push({ nome, total });
-      }
-    }
-
-    setCurtidas(listaCurtidas.sort((a, b) => b.total - a.total));
-    setNaoCurtidas(listaNaoCurtidas.sort((a, b) => b.total - a.total));
+    const dados = JSON.parse(localStorage.getItem("curtidas")) || {};
+    setDadosCurtidas(dados);
   }, []);
 
   return (
-    <div className="ranking-container">
-      <h2 className="titulo">Ranking dos Favoritos</h2>
-      <div className="colunas">
-        <div className="coluna">
-          <h3>👍</h3>
-          {curtidas.map((item, index) => (
-            <div className="linha" key={index}>
-              <span>{item.nome}</span>
-              <span>👍 {item.total}</span>
-            </div>
-          ))}
-        </div>
-        <div className="coluna">
-          <h3>👎</h3>
-          {naoCurtidas.map((item, index) => (
-            <div className="linha" key={index}>
-              <span>{item.nome}</span>
-              <span>👎 {item.total}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+    <>
+    <Header titulo="Ranking" />
+    
+    <div className="resumo-curtidas">
+      <h2>Resumo de Curtidas por Página</h2>
+      <ul>
+        {Object.entries(nomesPaginas).map(([id, titulo]) => {
+          const curtidas = dadosCurtidas[id]?.total || 0;
+          return (
+            <li key={id}>
+              <strong>{titulo}:</strong> {curtidas} curtida{curtidas !== 1 ? "s" : ""}
+            </li>
+          );
+        })}
+      </ul>
     </div>
+    <Footer/>
+    </>
   );
 };
 
-function formatarNome(id) {
-  return id
-    .replace(/_/g, " ")
-    .replace(/\b\w/g, (l) => l.toUpperCase());
-}
-
-export default Ranking;
+export default ResumoCurtidas;
