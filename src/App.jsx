@@ -14,7 +14,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
   // import RevolucaoRussas from './pages/revolucaoRussa'
   import FascismoItaliano from './pages/fascismoItaliano'
   // import Revolucao30 from './pages/revolucao30'
-  // import Crise29 from './pages/crise29'
+  import Crise29 from './pages/crise29'
 
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
           <Route path='/primeira-guerra' element={<PrimeiraGuerra/>} />
           <Route path='/revolucao-russa' element={<RevolucaoRussas/>} /> */}
           <Route path='/fascismo' element={<FascismoItaliano/>} />
-          {/* <Route path='/revolucao-1930' element={<Revolucao30/>} />
-          <Route path='/crise-29' element={<Crise29/>} /> */}
+          {/* <Route path='/revolucao-1930' element={<Revolucao30/>} />*/}
+          <Route path='/crise-29' element={<Crise29/>} /> 
           
                 
         </Routes>
