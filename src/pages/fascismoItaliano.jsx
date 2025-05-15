@@ -11,7 +11,7 @@ const CardComNav = () => {
 
   return (
     <>
-    <Header />
+    <Header titulo="quezia" />
     <div className="container">
         
 

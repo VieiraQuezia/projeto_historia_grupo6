@@ -8,7 +8,7 @@ const home = () => {
 
   return (
     <>
-    <Header />
+  <Header titulo="HOME PAGE" />
     
     <article className="meioHome">
 
