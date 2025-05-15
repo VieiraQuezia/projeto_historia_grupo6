@@ -115,3 +115,12 @@ padding: 24px;
     margin-right: auto;
     margin-left: auto;
   }
+
+  .fotogrupo {
+    padding-top: 4%;
+    padding-left: 5%;
+    width: 40%;
+    height: 45%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
