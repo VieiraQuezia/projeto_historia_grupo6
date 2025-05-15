@@ -1,40 +1,14 @@
-import React, { useState, useEffect } from "react";
-
-import Img1 from "./assets/camisa/camiSA.jpg";
-import Img2 from "./assets/jaqueta/jaqueta.jpg";
-import Img3 from "./assets/oculos/Armação da Oakley.jpg";
-import Img4 from "./assets/tenis/air_jordan_5.jpg";
-
-
-
 import "./pages/zpages.css";
 
+// import das imagens
+import Img1 from "../assets/guerraCanudos/img1.jpg";
+import Img2 from "../assets/guerraCanudos/img2.webp";
+
 const CardComNav = () => {
-  const imagens = [Img1, Img2, Img3, Img4];
-  const [index, setIndex] = useState(0);
-
-
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % imagens.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div className="container">
-      {/* Navegação lateral */}
-      <nav className="side-nav">
-        <img
-          src={imagens[index]}
-          alt={`Imagem de estudo ${index + 1}`}
-          className="carousel-img"
-        />
-
-       
-       
-      </nav>
+        
 
       {/* Card principal */}
       <nav className="main-nav">
@@ -68,7 +42,7 @@ Descaso do poder público com a população que ali vivia.
 
 
         <div className="card">
-        <img src={Img1} alt="Imagem fixa" className="static-img" />
+        <img src={Img2} alt="Imagem fixa" className="static-img" />
 
           <div className="card-content">
 
