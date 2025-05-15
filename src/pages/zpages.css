@@ -105,3 +105,13 @@ padding: 24px;
     width: 40%;
     height: 75%;
   }
+
+  .videoyt {
+    h2 {
+      text-align: center;
+      margin-right: auto;
+    }
+    height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+  }
