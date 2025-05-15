@@ -88,6 +88,20 @@ const CardComNav = () => {
               </p>
             </div>
           </div>
+
+          <h2>Filme relacionado: "1917"</h2>
+<br />
+
+          <iframe className="videoyt"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/D4JmMBC28x8?si=WJyy0fLt8NfnkjMw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </nav>
       </div>
 
