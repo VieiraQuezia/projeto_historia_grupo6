@@ -1,9 +1,8 @@
 import "../pages/zpages.css";
 
 // import das imagens
-import Img1 from "../assets/conflitosSecXX/revolucao1930/img1.jpg";
-import Img2 from "../assets/conflitosSecXX/revolucao1930/img2.jpg";
-
+import Img1 from "../assets/conflitosSecXX/revolucaoRussa/img7.jpg";
+import Img2 from "../assets/conflitosSecXX/revolucaoRussa/img2.jpg";
 // componentes
 import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
@@ -19,7 +18,6 @@ const CardComNav = () => {
         <nav className="main-nav">
           <div className="card">
             <img src={Img1} alt="Imagem fixa" className="static-img" />
-
             <div className="card-content">
               <p className="card-text">
                 A Revolução Russa, ocorrida em 1917,foi responsável por derrubar
