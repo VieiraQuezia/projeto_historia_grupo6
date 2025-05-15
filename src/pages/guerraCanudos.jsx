@@ -1,8 +1,8 @@
-import "./pages/zpages.css";
+import "../pages/zpages.css";
 
 // import das imagens
-import Img1 from "../assets/guerraCanudos/img1.jpg";
-import Img2 from "../assets/guerraCanudos/img2.webp";
+import Img1 from "../assets/conflitosSecXX/guerraCanudos/img1.jpg";
+import Img2 from "../assets/conflitosSecXX/guerraCanudos/img2.webp";
 
 const CardComNav = () => {
 

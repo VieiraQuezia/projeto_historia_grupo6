@@ -1,13 +1,17 @@
-import "./pages/zpages.css";
+import "../pages/zpages.css";
+
+import Header from '../components/header'
 
 // import das imagens
-import Img1 from "../assets/guerraCanudos/img1.jpg";
-import Img2 from "../assets/guerraCanudos/img2.jpg";
-import Img3 from "../assets/guerraCanudos/img3.jpg";
+import Img1 from "../assets/conflitosSecXX/fascismoItaliano/img1.jpg";
+import Img2 from "../assets/conflitosSecXX/fascismoItaliano/img2.jpg";
+import Img3 from "../assets/conflitosSecXX/fascismoItaliano/img3.jpg";
 
 const CardComNav = () => {
 
   return (
+    <>
+    <Header />
     <div className="container">
         
 
@@ -41,6 +45,7 @@ Até o símbolo do fascismo foi retirado da história romana, pois usou-se, para
         
       </nav>
     </div>
+    </>
   );
 };
 

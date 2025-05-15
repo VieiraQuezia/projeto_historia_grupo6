@@ -1,33 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// Components
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+//.
+
+// Style
+  import './App.css'
+//.
+
+// Pages
+  import Home from './pages/homePage'
+  import GuerraCanudos from './pages/guerraCanudos'
+  // import GuerraContestado from './pages/guerraContestado'
+  // import PrimeiraGuerra from './pages/primeiraGuerra'
+  // import RevolucaoRussas from './pages/revolucaoRussa'
+  import FascismoItaliano from './pages/fascismoItaliano'
+  // import Revolucao30 from './pages/revolucao30'
+  // import Crise29 from './pages/crise29'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          {/* <Route path='/canudos' element={<GuerraCanudos/>} />
+          <Route path='/contestado' element={<GuerraContestado/>} />
+          <Route path='/primeira-guerra' element={<PrimeiraGuerra/>} />
+          <Route path='/revolucao-russa' element={<RevolucaoRussas/>} /> */}
+          <Route path='/fascismo' element={<FascismoItaliano/>} />
+          {/* <Route path='/revolucao-30' element={<Revolucao30/>} />
+          <Route path='/crise-29' element={<Crise29/>} /> */}
+          
+                
+        </Routes>
+      </BrowserRouter>
+
+      
     </>
   )
 }
