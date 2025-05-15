@@ -1,0 +1,25 @@
+.gostei-ativo{
+    background-color:transparent;
+    color: #fff;
+}
+
+.naoGostei-ativo{
+    background-color:transparent;
+}
+
+.desativado{
+    background-color: transparent;
+}
+
+.bloco{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 10px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border: none;
+}
