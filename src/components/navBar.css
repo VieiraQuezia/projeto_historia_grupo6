@@ -1,0 +1,74 @@
+/* Estilo do botão de menu (imagem) */
+img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    margin: 1rem;
+    z-index: 1001;
+  }
+  
+  /* Container do menu */
+  .menu-opcoes {
+    position: absolute;
+    top: 70px; /* ajustável conforme o layout */
+    right: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Lista de links */
+  .menu-opcoes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-opcoes li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .menu-opcoes li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .menu-opcoes a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .menu-opcoes a:hover {
+    color: #8c1c13;
+  }
+  
+  /* Animação de fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .menu-opcoes {
+      right: 0.5rem;
+      left: 0.5rem;
+      width: auto;
+    }
+  
+    img {
+      width: 32px;
+    }
+  }
+  
