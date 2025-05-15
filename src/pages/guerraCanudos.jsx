@@ -1,14 +1,21 @@
-import "./pages/zpages.css";
+import "../pages/zpages.css";
 
 // import das imagens
-import Img1 from "../assets/guerraCanudos/img1.jpg";
-import Img2 from "../assets/guerraCanudos/img2.webp";
+import Img1 from "../assets/conflitosSecXX/guerraCanudos/img1.jpg";
+import Img2 from "../assets/conflitosSecXX/guerraCanudos/img2.webp";
 
+// componentes
+import NavAnuncio from '../components/cardAnuncio'
+import Header from '../components/header'
+import Footer from '../components/footer'
 const CardComNav = () => {
 
   return (
+    <>
+    <Header titulo="Guerra de Canudos" />
     <div className="container">
-        
+
+        <NavAnuncio />
 
       {/* Card principal */}
       <nav className="main-nav">
@@ -63,6 +70,9 @@ Outros autores importantes da época e que também foram influências para Eucli
         </div>
       </nav>
     </div>
+
+<Footer />
+    </>
   );
 };
 
