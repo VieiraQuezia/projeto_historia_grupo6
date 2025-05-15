@@ -1,3 +1,5 @@
+
+/* _______________________________________ FASCISMO ITALIANO & GUERRA DE CANUDOS_________________________________________ */
 .container {
     display: flex;
     min-height: 100vh;
@@ -60,27 +62,40 @@ padding: 24px;
     line-height: 1.5;
   }
 
-  @media (max-width: 767px) {
-    .container {
-      flex-direction: column;
-    }
+  /* ____________________________________________________________________________________________________ */
 
-    .side-nav {
-      width: 100%;
+  /* _______________________________________ HOME _________________________________________ */
+
+  .meioHome{
+    background-color: #a48c7c;
       display: flex;
-      flex-direction: column;
-    }
-
-    .main-nav {
-      width: 100%;
-    }
-
-    .card {
-      flex-direction: column;
-    }
-
-    .card img.static-img,
-    .card-content {
-      width: 100%;
-    }
+    min-height: 100vh;
   }
+
+
+  .blocoHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    display: flex;
+    
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #735751;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    margin-bottom: 5%;
+  }
+
+
+   .blocoHome img {
+    padding-top: 10%;
+    padding-left: 5%;
+    width: 40%;
+    height: 50%;
+  }
+  
