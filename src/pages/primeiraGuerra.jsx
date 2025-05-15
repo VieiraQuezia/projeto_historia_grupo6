@@ -70,7 +70,7 @@ const CardComNav = () => {
           </div>
 
           <div className="card">
-            <img src={Img3} alt="Imagem fixa" className="static-img" />
+            <img src={Img3} alt="Imagem fixa" className="imgespecifico" />
 
             <div className="card-content">
               <p className="card-text">
