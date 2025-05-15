@@ -7,11 +7,14 @@ header{
   align-items: center;
 
 
+  a{
+        color: #eff2f4;
+        text-decoration: none;
   
+    }
 }
 
-header h1{
-}
+
 .Logo{
   width: 10%;
   height: 5%;
@@ -35,6 +38,7 @@ border-color: #849cc8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para o menu */
     display: flex;
     align-items:flex-end;
+    flex-direction: column;
     
 }
 
@@ -56,3 +60,21 @@ border-color: #849cc8;
     text-decoration: none; /* Remove sublinhado dos links */
     color: black; /* Cor do texto */
 }
+
+/* ----------------------------------------------------- */
+
+.botao-tema {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: inherit;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.botao-tema:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
