@@ -7,6 +7,7 @@ import Img2 from "../assets/conflitosSecXX/revolucaoRussa/img2.jpg";
 import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import BtnCurtida from "../components/botaoCurtida";
 const CardComNav = () => {
   return (
     <>
@@ -46,6 +47,8 @@ const CardComNav = () => {
                 russos, que eram chamados de comunistas.
               </p>
             </div>
+                      <BtnCurtida id="Revolucao-Russa" />
+
           </div>
 
           <div className="card">
@@ -64,6 +67,8 @@ const CardComNav = () => {
                 modernização do país.
               </p>
             </div>
+                      <BtnCurtida id="Revolucao-Russa" />
+
           </div>
         </nav>
       </div>

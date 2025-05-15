@@ -8,6 +8,7 @@ import Img2 from "../assets/conflitosSecXX/guerraCanudos/img2.webp";
 import NavAnuncio from '../components/cardAnuncio'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import BtnCurtida from '../components/botaoCurtida'
 const CardComNav = () => {
 
   return (
@@ -67,6 +68,8 @@ Outros autores importantes da época e que também foram influências para Eucli
 
             </p>
           </div>
+            <BtnCurtida id="Guerra-De-Canudos" />
+
         </div>
       </nav>
     </div>

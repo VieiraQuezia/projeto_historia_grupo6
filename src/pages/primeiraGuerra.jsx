@@ -9,6 +9,7 @@ import Img3 from "../assets/conflitosSecXX/primeiraGuerra/img5.jpg";
 import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import BtnCurtida from "../components/botaoCurtida";
 const CardComNav = () => {
   return (
     <>
@@ -43,6 +44,8 @@ const CardComNav = () => {
                 estabelecidas entre os países.
               </p>
             </div>
+                      <BtnCurtida id="Fascismo-Italiano" />
+
           </div>
 
           <div className="card">
@@ -67,6 +70,8 @@ const CardComNav = () => {
                 humano e industrial, foi fundamental para a vitória dos Aliados.
               </p>
             </div>
+                      <BtnCurtida id="Primeira-Guerra" />
+
           </div>
 
           <div className="card">
@@ -87,6 +92,8 @@ const CardComNav = () => {
                 como uma potência global.
               </p>
             </div>
+                      <BtnCurtida id="Primeira-Guerra" />
+
           </div>
 
           <h2>Filme relacionado: "1917"</h2>

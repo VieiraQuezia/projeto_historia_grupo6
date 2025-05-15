@@ -77,4 +77,8 @@ border-color: #849cc8;
 .botao-tema:hover {
     background-color: rgba(200, 200, 200, 0.2);
 }
+/* ----------------------------- */
+.bx-like{
+    font-size: 3vw;
 
+}

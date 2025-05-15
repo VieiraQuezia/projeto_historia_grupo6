@@ -8,6 +8,7 @@ import Img2 from "../assets/conflitosSecXX/revolucao1930/img2.jpg";
 import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import BtnCurtida from "../components/botaoCurtida";
 const CardComNav = () => {
   return (
     <>
@@ -42,6 +43,8 @@ const CardComNav = () => {
                 candidato a vice-presidente João Pessoa, em julho de 1930.
               </p>
             </div>
+                      <BtnCurtida id="Revolucao-30" />
+
           </div>
 
           <div className="card">
@@ -60,6 +63,8 @@ const CardComNav = () => {
                 modernização do país.
               </p>
             </div>
+                      <BtnCurtida id="Revolucao-30" />
+
           </div>
 
           <iframe className="videoyt"

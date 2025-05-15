@@ -8,6 +8,7 @@ import Img2 from "../assets/conflitosSecXX/guerraContestado/img2.webp";
 import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import BtnCurtida from "../components/botaoCurtida";
 const CardComNav = () => {
   return (
     <>
@@ -40,6 +41,8 @@ const CardComNav = () => {
                 contra os sertanejos.
               </p>
             </div>
+                      <BtnCurtida id="Guerra-Contestado" />
+
           </div>
 
           <div className="card">
@@ -62,6 +65,8 @@ const CardComNav = () => {
                 principal consequência da guerra.
               </p>
             </div>
+                      <BtnCurtida id="Guerra-Contestado" />
+
           </div>
 
           <iframe className="videoyt"
