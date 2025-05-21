@@ -5,7 +5,6 @@ import Img1 from "/1crise29.png";
 import Img2 from "/2crise29.png";
 
 // componentes
-import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import BtnCurtida from "../components/botaoCurtida";
@@ -14,7 +13,6 @@ const CardComNav = () => {
     <>
       <Header titulo="Crise de 1929" />
       <div className="container">
-        <NavAnuncio />
 
         {/* Card principal */}
         <nav className="main-nav">
