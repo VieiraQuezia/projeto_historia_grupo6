@@ -74,7 +74,12 @@ function Home(){
 <BtnCurtida id='Primeira-Guerra-Mundial'/>
 
 
-<CardWikipedia termoBusca="Primeira Guerra Mundial" imagem={Img3} />
+
+<CardWikipedia termoBusca="Primeira Guerra Mundial" />
+<BtnCurtida id='Wikipedia-Primeira-Guerra-Mundial'/>
+
+
+
  <iframe
              className="videoyt"
              width="560"

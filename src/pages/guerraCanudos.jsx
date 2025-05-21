@@ -83,10 +83,14 @@ function Home(){
 
 
 
-<BtnCurtida/>
-
+<BtnCurtida id='Guerra-Canudos'/>
 
 <CardWikipedia termoBusca="Guerra de Canudos"  />
+
+<BtnCurtida id='wikpedia-Guerra-Canudos'/>
+
+
+
  <iframe className="videoyt"
              width="560"
              height="315"
@@ -97,6 +101,7 @@ function Home(){
              referrerpolicy="strict-origin-when-cross-origin"
              allowfullscreen
            ></iframe>
+
             <Footer />
         </>
     )
