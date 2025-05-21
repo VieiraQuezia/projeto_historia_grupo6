@@ -140,6 +140,7 @@ function Header(props) {
             {menuAberto && (
                 <nav className="menu" ref={menuRef}>
                     <ul>
+                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/canudos">Guerra de Canudos</Link></li>
              <li><Link to="/contestado">Guerra do Contestado</Link></li>
              <li><Link to="/primeira-guerra">Primeira Guerra Mundial</Link></li>
