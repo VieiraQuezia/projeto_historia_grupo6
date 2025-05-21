@@ -9,133 +9,136 @@
 
 
 /* _______________________________________ FASCISMO ITALIANO & GUERRA DE CANUDOS_________________________________________ */
+/* ____________________________ CONTAINER E ESTRUTURA GERAL ____________________________ */
 .container {
-    display: flex;
-    height: 200vh;
-    background-color: #E7D7C1;
-    font-family: sans-serif;
-  }
+  display: flex;
+  flex-direction: row;
+  background-color: #E7D7C1;
+  font-family: sans-serif;
+  padding: 2rem;
+  margin-left: -2%;
+}
 
- 
+/* ____________________________ NAVEGAÇÃO PRINCIPAL ____________________________ */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
+/* ____________________________ CARD PADRÃO ____________________________ */
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #A78A7F;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 0 auto;
+  margin-left: 7%;
+  margin-right: auto;
+  width: 100%;
+}
 
+/* ____________________________ IMAGENS DOS CARDS ____________________________ */
+.card img {
+  width: 40%;
+  object-fit: cover;
+  padding: 2rem;
+}
 
-  .anuncio-img {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 12px;
-  }
+.imgespecifico {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  padding: 2rem;
+}
 
-  .main-nav {
-display: flex;
-flex-direction: column;
-padding: 24px;
-  }
+/* ____________________________ CONTEÚDO DOS CARDS ____________________________ */
+.card-content {
+  width: 60%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  .card {
-    display: flex;
-    
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: #A78A7F;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-direction: row;
-    margin-bottom: 5%;
-  }
+.card-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
 
-  .card img.static-img {
-    padding-top: 10%;
-    padding-left: 5%;
-    width: 40%;
-    height: 50%;
-  }
+.card-primeira {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
 
-  .card-content {
-    width: 50%;
-    padding: 24px;
-    
-  }
+/* ____________________________ VÍDEO YOUTUBE ____________________________ */
+.videoyt {
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
 
-  .card-content h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
+/* ____________________________ TÍTULO VÍDEO ____________________________ */
+h2 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
 
-  .card-content p {
-    
-    line-height: 1.5;
-  }
+/* ____________________________ ANÚNCIO ____________________________ */
+.anuncio-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
 
-  /* ____________________________________________________________________________________________________ */
+/* ____________________________ HOME (OUTRA PÁGINA) ____________________________ */
+.meioHome {
+  background-color: #a48c7c;
+  display: flex;
+  min-height: 100vh;
+}
 
-  /* _______________________________________ HOME _________________________________________ */
+.blocoHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #735751;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  margin-bottom: 5%;
+}
 
-  .meioHome{
-    background-color: #a48c7c;
-      display: flex;
-    min-height: 100vh;
-  }
+.blocoHome img {
+  padding-top: 10%;
+  padding-left: 5%;
+  width: 40%;
+  height: 50%;
+}
 
+/* ____________________________ FOTO GRUPO / OUTRAS IMG ____________________________ */
+.fotogrupo {
+  padding-top: 4%;
+  padding-left: 5%;
+  width: 40%;
+  height: auto;
+  margin: auto 0;
+}
 
-  .blocoHome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    display: flex;
-    
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: #735751;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-direction: row;
-    margin-bottom: 5%;
-  }
-
-
-   .blocoHome img {
-    padding-top: 10%;
-    padding-left: 5%;
-    width: 40%;
-    height: 50%;
-  }
-  
-  .imgespecifico {
-    padding-top: 4%;
-    padding-left: 5%;
-    width: 40%;
-    height: 75%;
-  }
-
-  .videoyt {
-    h2 {
-      text-align: center;
-      margin-right: 20%
-    }
-    height: 30%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .fotogrupo {
-    padding-top: 4%;
-    padding-left: 5%;
-    width: 40%;
-    height: 45%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  /* ---------------------------------------------------- RANKING -------------------------------------------------- */
-  .resumo-curtidas {
+/* ____________________________ RANKING / CURTIDAS ____________________________ */
+.resumo-curtidas {
   padding: 2rem;
   background-color: #fdfdfd;
   max-width: 600px;
@@ -158,4 +161,3 @@ padding: 24px;
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
-

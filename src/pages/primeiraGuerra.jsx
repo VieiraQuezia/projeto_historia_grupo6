@@ -1,29 +1,62 @@
-import "../pages/zpages.css";
 
-// import das imagens
+
+import "../pages/zpages.css";
+import { useEffect, useState } from "react";
+
+// Import das imagens
 import Img1 from "../assets/conflitosSecXX/primeiraGuerra/img2.webp";
 import Img2 from "../assets/conflitosSecXX/primeiraGuerra/img4.webp";
 import Img3 from "../assets/conflitosSecXX/primeiraGuerra/img5.jpg";
 
-// componentes
+// Componentes
 import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import BtnCurtida from "../components/botaoCurtida";
+
 const CardComNav = () => {
+  const [dado, setDado] = useState(null);
+  const [erro, setErro] = useState('');
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const buscarDado = async () => {
+      try {
+        const dadoLocal = localStorage.getItem('PrimeiraGuerra');
+        if (dadoLocal) {
+          setDado(JSON.parse(dadoLocal));
+          setLoading(false);
+          return;
+        }
+
+        const res = await fetch(
+          `https://pt.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent("Primeira Guerra Mundial")}`
+        );
+        const resultado = await res.json();
+        localStorage.setItem("PrimeiraGuerra", JSON.stringify(resultado));
+        setDado(resultado);
+      } catch (erro) {
+        setErro("Erro ao buscar dados.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    buscarDado();
+  }, []);
+
   return (
     <>
       <Header titulo="Primeira Guerra Mundial" />
       <div className="container">
         <NavAnuncio />
 
-        {/* Card principal */}
         <nav className="main-nav">
+          {/* Card 1 */}
           <div className="card">
-            <img src={Img1} alt="Imagem fixa" className="static-img" />
-
+            <img src={Img1} alt="Soldados na Primeira Guerra" className="static-img" />
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A Primeira Guerra Mundial, que ocorreu entre 1914 e 1918, foi um
                 conflito de escala mundial, envolvendo as grandes potências
                 econômicas e militares da época. Os antecedentes remontam até o
@@ -44,15 +77,13 @@ const CardComNav = () => {
                 estabelecidas entre os países.
               </p>
             </div>
-                      <BtnCurtida id="Fascismo-Italiano" />
-
           </div>
 
+          {/* Card 2 */}
           <div className="card">
-            <img src={Img2} alt="Imagem fixa" className="static-img" />
-
+            <img src={Img2} alt="Trincheiras da Primeira Guerra" className="static-img" />
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A Primeira Guerra Mundial se desenrolou em duas fases
                 principais. A primeira, a guerra de movimento, foi marcada por
                 rápidos avanços e tentativas de ocupação territorial. Já a
@@ -70,15 +101,13 @@ const CardComNav = () => {
                 humano e industrial, foi fundamental para a vitória dos Aliados.
               </p>
             </div>
-                      <BtnCurtida id="Primeira-Guerra" />
-
           </div>
 
+          {/* Card 3 */}
           <div className="card">
-            <img src={Img3} alt="Imagem fixa" className="imgespecifico" />
-
+            <img src={Img3} alt="Tratado de Versalhes" className="imgespecifico" />
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A guerra chegou ao fim em 11 de novembro de 1918, com a derrota
                 das Potências Centrais. Em 1919, foi assinado o Tratado de
                 Versalhes, que impôs duras condições à Alemanha, considerada a
@@ -92,26 +121,49 @@ const CardComNav = () => {
                 como uma potência global.
               </p>
             </div>
-                      <BtnCurtida id="Primeira-Guerra" />
-
           </div>
 
-          <h2>Filme relacionado: "1917"</h2>
-<br />
+          {/* Botão de Curtida Único */}
+          <BtnCurtida id="Primeira-Guerra-Unico" />
 
-          <iframe className="videoyt"
+          {/* Card com conteúdo da API */}
+          <div className="card">
+            <img src={Img3} alt="Imagem ilustrativa" className="imgespecifico" />
+            <div className="card-content">
+              {loading && <p>Carregando...</p>}
+              {erro && <p style={{ color: "red" }}>{erro}</p>}
+              {!loading && dado && (
+                <div className="api-section">
+                  <h1>{dado.title}</h1>
+                  <h3><em>{dado.description}</em></h3>
+                  {dado.thumbnail && (
+                    <img src={dado.thumbnail.source} alt={dado.title} width={250} />
+                  )}
+                  <p>{dado.extract}</p>
+                  <a href={dado.content_urls.desktop.page} target="_blank" rel="noreferrer">
+                    Ver na Wikipedia
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Vídeo */}
+          <h2>Filme relacionado: "1917"</h2>
+          <br />
+          <iframe
+            className="videoyt"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/D4JmMBC28x8?si=WJyy0fLt8NfnkjMw"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </nav>
       </div>
-
       <Footer />
     </>
   );
