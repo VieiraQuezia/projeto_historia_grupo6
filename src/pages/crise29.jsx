@@ -22,7 +22,7 @@ const CardComNav = () => {
             <img src={Img1} alt="Imagem fixa" className="static-img" />
 
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A Crise de 1929, que ficou conhecida como a Grande Depressão,
                 foi uma forte degradação da economia, que ocorreu no final da
                 década de 1920. O liberalismo econômico decaiu naquele momento,
@@ -59,7 +59,7 @@ const CardComNav = () => {
             <img src={Img2} alt="Imagem fixa" className="static-img" />
 
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A superprodução das indústrias aumentou, porém os salários
                 ficaram paralisados, fazendo com que as pessoas não pudessem
                 comprar a quantidade exorbitante de produtos feitos pela
