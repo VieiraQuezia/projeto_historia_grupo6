@@ -35,6 +35,7 @@ function Home() {
       <BtnCurtida id="Revolução-Russa" />
 
       <CardWikipedia termoBusca="Revolução Russa" />
+
       <center>
         <iframe
           width="560"

@@ -66,7 +66,6 @@ function Home(){
 
 <CardWikipedia termoBusca="Fascismo na Itália"  />
 
-<BtnCurtida id='wikpedia-Fascismo-Italiano'/>
 
 
    <iframe className="videoyt"

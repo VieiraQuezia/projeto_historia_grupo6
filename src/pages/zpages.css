@@ -99,6 +99,25 @@
   font-weight: 600;
 }
 
+
+.BtnNum{
+  padding: 1%;
+  background-color: white;
+  color: #222;
+border: 2px solid #8C1C13;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "Sriracha", cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 5%;
+  
+
+
+}
+
+
+
 /* ======================= RESPONSIVO ======================= */
 @media (max-width: 600px) {
   .resumo-curtidas {

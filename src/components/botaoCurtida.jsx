@@ -34,6 +34,9 @@ const BtnCurtida = ({ id }) => {
   };
 
   return (
+
+
+
     <div className="btn-curtida-container">
       <button className="btn-curtir" onClick={handleCurtir}>
         👍
@@ -45,6 +48,9 @@ const BtnCurtida = ({ id }) => {
       </button>
       <span className="btn-curtida-contador">{naoCurtidas}</span>
     </div>
+
+
+
   );
 };
 

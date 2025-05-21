@@ -76,7 +76,6 @@ function Home(){
 
 
 <CardWikipedia termoBusca="Primeira Guerra Mundial" />
-<BtnCurtida id='Wikipedia-Primeira-Guerra-Mundial'/>
 
 
 

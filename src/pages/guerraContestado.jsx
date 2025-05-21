@@ -63,12 +63,11 @@ function Home(){
 
 
 
-<BtnCurtida/>
+<BtnCurtida id='Guerra-Contestado'/>
 
 
 <CardWikipedia termoBusca="Guerra do Contestado"  />
 
-<BtnCurtida id='wikpedia-Guerra-Contestado'/>
 
 
  <iframe className="videoyt"

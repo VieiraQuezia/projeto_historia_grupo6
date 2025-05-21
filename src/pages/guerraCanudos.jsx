@@ -87,7 +87,6 @@ function Home(){
 
 <CardWikipedia termoBusca="Guerra de Canudos"  />
 
-<BtnCurtida id='wikpedia-Guerra-Canudos'/>
 
 
 
