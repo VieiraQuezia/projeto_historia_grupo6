@@ -79,6 +79,7 @@ const CardComNav = () => {
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
+             
         </nav>
       </div>
 
