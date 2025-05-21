@@ -1,12 +1,10 @@
 import "../pages/zpages.css";
 
 // import das imagens
-import Img1 from "../assets/conflitosSecXX/fascismoItaliano/img1.jpg";
 import Img2 from "../assets/conflitosSecXX/fascismoItaliano/img2.jpg";
 import Img3 from "../assets/conflitosSecXX/fascismoItaliano/img3.jpg";
 
 // componentes
-import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import BtnCurtida from "../components/botaoCurtida";
@@ -15,7 +13,6 @@ const CardComNav = () => {
     <>
       <Header titulo="Fascismo Italiano" />
       <div className="container">
-        <NavAnuncio />
 
         {/* Card principal */}
         <nav className="main-nav">

@@ -4,7 +4,6 @@ import "../pages/zpages.css";
 import Img1 from "../assets/conflitosSecXX/revolucaoRussa/img7.jpg";
 import Img2 from "../assets/conflitosSecXX/revolucaoRussa/img2.jpg";
 // componentes
-import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import BtnCurtida from "../components/botaoCurtida";
@@ -13,8 +12,6 @@ const CardComNav = () => {
     <>
       <Header titulo="Revolução Russa" />
       <div className="container">
-        <NavAnuncio />
-
         {/* Card principal */}
         <nav className="main-nav">
           <div className="card">
@@ -47,7 +44,6 @@ const CardComNav = () => {
                 russos, que eram chamados de comunistas.
               </p>
             </div>
-
           </div>
 
           <div className="card">
@@ -66,13 +62,13 @@ const CardComNav = () => {
                 modernização do país.
               </p>
             </div>
-                      <BtnCurtida id="Revolucao-Russa" />
-
+            <BtnCurtida id="Revolucao-Russa" />
           </div>
-             <iframe className="videoyt"
+          <iframe
+            className="videoyt"
             width="560"
             height="315"
-            src="https://youtu.be/XpxprM5lcm0?si=B8l7cUC-bUINv0VT"
+            src="https://www.youtube.com/embed/7R1F9vZ8Jcw?si=aQAHAYDwo_US2B0Z"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -80,7 +76,6 @@ const CardComNav = () => {
             allowfullscreen
           ></iframe>
         </nav>
-        
       </div>
 
       <Footer />
