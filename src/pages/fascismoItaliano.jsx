@@ -2,7 +2,6 @@
 
 
 
-
 import "./zpages.css"
   //  Import das imagens
  import Img1 from "../assets/conflitosSecXX/fascismoItaliano/img1.jpg";
@@ -19,7 +18,7 @@ function Home(){
     
     return(
         <>
-        
+
         <Header titulo='Fascismo na Itália' />
           
 

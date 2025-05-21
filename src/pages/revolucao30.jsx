@@ -5,7 +5,6 @@ import Img1 from "../assets/conflitosSecXX/revolucao1930/img1.jpg";
 import Img2 from "../assets/conflitosSecXX/revolucao1930/img2.jpg";
 
 // componentes
-import NavAnuncio from "../components/cardAnuncio";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import BtnCurtida from "../components/botaoCurtida";
@@ -14,7 +13,6 @@ const CardComNav = () => {
     <>
       <Header titulo="Revolução de 1930" />
       <div className="container">
-        <NavAnuncio />
 
         {/* Card principal */}
         <nav className="main-nav">
