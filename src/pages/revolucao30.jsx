@@ -143,17 +143,16 @@ function Home(){
 <BtnCurtida id='Primeira-Guerra-Mundial'/>
 
 
-<CardWikipedia termoBusca="Primeira Guerra Mundial" imagem={Img3} />
- <iframe
-             className="videoyt"
+<CardWikipedia termoBusca="Revolução de 1930" imagem={Img3} />
+<iframe className="videoyt"
              width="560"
              height="315"
-             src="https://www.youtube.com/embed/D4JmMBC28x8?si=WJyy0fLt8NfnkjMw"
+             src="https://www.youtube.com/embed/O6q1G4fjUx8?si=OtFXyEurb91sPgY4"
              title="YouTube video player"
-             frameBorder="0"
+             frameborder="0"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerPolicy="strict-origin-when-cross-origin"
-             allowFullScreen
+             referrerpolicy="strict-origin-when-cross-origin"
+             allowfullscreen
            ></iframe>
             <Footer />
         </>
