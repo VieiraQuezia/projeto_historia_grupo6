@@ -25,7 +25,7 @@ const CardComNav = () => {
 
           <div className="card-content">
 
-            <p className="card-text">
+            <p className="card-primeira">
         A Crise de 1929, que ficou conhecida como a Grande Depressão, foi uma forte degradação da economia, que ocorreu no final da década de 1920. O liberalismo econômico decaiu naquele momento, e as causas dessa crise foram a superprodução da indústria americana e especulação financeira.<br/>
 
         Os Estados Unidos já era considerado o país com maior economia do mundo e após a Primeira Guerra Mundial, o crescimento da economia americana ficou muito evidente, tudo isso em 1920, tanto que esse ano marcou o avanço do consumo de mercadorias, esse estilo de vida americano foi chamado de “American Way Of Life”. O país ficou responsável por 40% das importações, pela produção de 42% das mercadorias realizadas no mundo inteiro e também emprestou grandes quantias de dinheiro para países europeus que necessitavam de auxílio por conta da Primeira Guerra Mundial. <br />
@@ -47,7 +47,7 @@ const CardComNav = () => {
 
           <div className="card-content">
 
-            <p className="card-text">
+            <p className="card-primeira">
          A superprodução das indústrias aumentou, porém os salários ficaram paralisados, fazendo com que as pessoas não pudessem comprar a quantidade exorbitante de produtos feitos pela indústria dos Estados Unidos, nem mesmo o próprio mercado conseguiu absorver essas mercadorias. Todo esse caos resultou na perda de esperança das pessoas que compraram ações nas empresas americanas e a quebra da bolsa de valores de Nova Iorque. Depois dessa quebra, no dia 24 de outubro de 1929, inúmeras pessoas começaram a vender suas ações, mais de 12 milhões de vendas ocorreram nesse dia, deixando o mercado em desespero. Esse ocorrido durou por dias, e as vendas das ações aumentaram, desaparecendo milhões de dólares.
 
         Isso gerou várias consequências, como: O PIB dos  Estados Unidos caiu aproximadamente 50%, várias pessoas desempregadas, as importações caíram 70%, as exportações caíram 50%, os empréstimos internacionais diminuem em 90%, a produção no mercado caiu, o salário médio caiu 50% na indústria, milhares de bancos e empresas faliram, muita fome no país inteiro e inúmeras pessoas perderam seus patrimônios. No Brasil a área que sofreu mais com o retrocesso da economia foi a produção do café. A baixa procura do café fez com que o produto fosse desvalorizado e para consertar a situação, Getúlio Vargas incinerou sacas de café.

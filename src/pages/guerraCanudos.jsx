@@ -25,7 +25,7 @@ const CardComNav = () => {
 
           <div className="card-content">
 
-            <p className="card-text">
+            <p className="card-canudos">
             A Guerra de Canudos foi um dos principais conflitos que marcaram o período entre a queda da monarquia e a instalação do
 regime republicano no Brasil. Aconteceu de novembro de 1896 a outubro de 1897 no sertão da Bahia, em uma fazenda improdutiva 
 ocupada por Antônio Conselheiro e seus mais de 20 mil seguidores.Teve caráter messiânico, por conta das pregações do beato, mas 
@@ -54,7 +54,7 @@ Descaso do poder público com a população que ali vivia.
 
           <div className="card-content">
 
-            <p className="card-text">
+            <p className="card-canudos">
          A Guerra de Canudos (1896-1897) foi um dos principais conflitos do período de transição para o sistema republicano, ocorreu no arraial de Canudos e envolveu o Exército contra Antonio Conselheiro e seus seguidores.
 Os motivos que teriam levado à guerra ainda são objetos de discussão, havendo duas teses principais: a Euclidiana, interpretando Canudos como um foco de restauração monárquica; e a de Rui Facó, marxista, tendo como epicentro a luta pela abolição dos latifúndios, pelo direito à terra e contra a opressão.
 O conflito é dividido em quatro expedições militares, sendo vencedora apenas a última.
