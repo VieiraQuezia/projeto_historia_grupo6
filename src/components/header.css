@@ -5,21 +5,17 @@
     justify-content: space-between;
     align-items: center;
 
-margin-left: 5%;
     background-color:#8C1C13;
-margin-top: 2%;
-width: 90%;
-position: fixed;
-padding: 0.1% 1% 0.1% 1%;
+width: auto;
 color: #eff2f4;
+
+img{
+    width: 10%;
+    height: auto;
+    transition: all 1s ease;
+}
 }
 
-/* Logo */
-.logoHeader {
-    width: 20%;
-    height:20%;
-    transition: all 1s ease
-}
 
 
 

@@ -105,13 +105,14 @@ function Home() {
                  abordagem prática visa não apenas aprofundar o entendimento dos
                  eventos históricos, mas também desenvolver competências
                  tecnológicas relevantes, como React e consumo de APIs. Para mais
-                 informações e acesso aos materiais desenvolvidos pelos grupos,
-                 visite o site oficial do projeto:
-                 https://sites.google.com/docente.senai.br/projeto-integrado-historia-xx/home?authuser=0.'
+                 informações e acesso aos materiais desenvolvidos pelos grupos.'
         img={Img1}
       />
-
+<center>
+      <a href="https://sites.google.com/docente.senai.br/projeto-integrado-historia-xx/home?authuser=0.'">visite o site oficial do projeto</a>
+</center>
       <center>
+        <br /><br /><br /><br /><br /><br /><br />  
         <iframe
           className="videoyt"
           width="560"
