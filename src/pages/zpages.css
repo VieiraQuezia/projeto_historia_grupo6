@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .banner {
     display: flex;
     flex-direction: row;
@@ -42,7 +43,7 @@
     font-size: 1.3em;
 }
 
-.cards {
+.card {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

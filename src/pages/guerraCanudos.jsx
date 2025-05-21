@@ -1,32 +1,23 @@
-
-
-
-import "./zpages.css"
- // Import das imagens
- import Img1 from "../assets/conflitosSecXX/guerraCanudos/img1.jpg";
- import Img2 from "../assets/conflitosSecXX/guerraCanudos/img2.webp";
+import "./zpages.css";
+// Import das imagens
+import Img1 from "../assets/conflitosSecXX/guerraCanudos/img1.jpg";
+import Img2 from "../assets/conflitosSecXX/guerraCanudos/img2.webp";
 // Componentes
-    import Header from "../components/header"
-    import Footer from "../components/footer"
-    import CardText from "../components/cartText"
-   import BtnCurtida from "../components/botaoCurtida";
-   import CardWikipedia from '../components/wikipedia'
-
+import Header from "../components/header";
+import Footer from "../components/footer";
+import CardText from "../components/cartText";
+import BtnCurtida from "../components/botaoCurtida";
+import CardWikipedia from "../components/wikipedia";
 
 // imagens
 
+function Home() {
+  return (
+    <>
+      <Header titulo="Guerra de Canudos" />
 
-
-
-function Home(){
-    
-    return(
-        <>
-            <Header titulo='Guerra de Canudos' />
-          
-
-<CardText 
- texto='     A Guerra de Canudos foi um dos principais conflitos que marcaram
+      <CardText
+        texto="     A Guerra de Canudos foi um dos principais conflitos que marcaram
                  o período entre a queda da monarquia e a instalação do regime
                  republicano no Brasil. Aconteceu de novembro de 1896 a outubro
                  de 1897 no sertão da Bahia, em uma fazenda improdutiva ocupada
@@ -49,10 +40,11 @@ function Home(){
                  com o crescimento de poder do líder messiânico, Antônio
                  Conselheiro; Conflitos de terras envolvendo latifundiários e a
                  população mais pobre; Descaso do poder público com a população
-                 que ali vivia.' 
- img={Img1}  />
-<CardText 
- texto='     A Guerra de Canudos (1896-1897) foi um dos principais conflitos
+                 que ali vivia."
+        img={Img1}
+      />
+      <CardText
+        texto="     A Guerra de Canudos (1896-1897) foi um dos principais conflitos
                  do período de transição para o sistema republicano, ocorreu no
                  arraial de Canudos e envolveu o Exército contra Antonio
                  Conselheiro e seus seguidores. Os motivos que teriam levado à
@@ -78,34 +70,32 @@ function Home(){
                  “civilização” e “barbárie”. Outros autores importantes da época
                  e que também foram influências para Euclides da Cunha são: Karl
                  Marx, Émile Durkheim, Auguste Comte, entre outros que foram
-                 fundamentais para o desenvolvimento da sociologia.' 
- img={Img2}  />
+                 fundamentais para o desenvolvimento da sociologia."
+        img={Img2}
+      />
 
+      <BtnCurtida id="Guerra-Canudos" />
 
+      <CardWikipedia termoBusca="Guerra de Canudos" />
 
-<BtnCurtida id='Guerra-Canudos'/>
+      <BtnCurtida id="wikpedia-Guerra-Canudos" />
 
-<CardWikipedia termoBusca="Guerra de Canudos"  />
-
-<BtnCurtida id='wikpedia-Guerra-Canudos'/>
-
-
-
- <iframe className="videoyt"
-             width="560"
-             height="315"
-             src="https://www.youtube.com/embed/O6q1G4fjUx8?si=OtFXyEurb91sPgY4"
-             title="YouTube video player"
-             frameborder="0"
-             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerpolicy="strict-origin-when-cross-origin"
-             allowfullscreen
-           ></iframe>
-
-            <Footer />
-        </>
-    )
+      <center>
+        <iframe
+          className="videoyt"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/O6q1G4fjUx8?si=OtFXyEurb91sPgY4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </center>
+      <Footer />
+    </>
+  );
 }
 
-export default Home
-
+export default Home;

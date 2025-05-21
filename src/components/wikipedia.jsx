@@ -24,7 +24,7 @@ const CardWikipedia = ({ termoBusca, imagem }) => {
         const resultado = await res.json();
         localStorage.setItem(chave, JSON.stringify(resultado));
         setDado(resultado);
-      } catch (e) {
+      } catch (erro) {
         setErro("Erro ao buscar dados.");
       } finally {
         setLoading(false);

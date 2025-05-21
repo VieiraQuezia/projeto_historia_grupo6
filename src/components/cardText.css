@@ -40,7 +40,10 @@
   padding-top: 10%;
   flex: 1;
 }
-
+.card .modo-escuro{
+  background-color: #4b5563;
+  color: white;
+}
 .card {
   max-width: 960px;
   margin: 0 auto;

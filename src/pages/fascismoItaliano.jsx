@@ -1,29 +1,22 @@
+import "./zpages.css";
+//  Import das imagens
+import Img1 from "../assets/conflitosSecXX/fascismoItaliano/img1.jpg";
+import Img2 from "../assets/conflitosSecXX/fascismoItaliano/img2.jpg";
 
+//Componentes
+import Header from "../components/header";
+import Footer from "../components/footer";
+import CardText from "../components/cartText";
+import BtnCurtida from "../components/botaoCurtida";
+import CardWikipedia from "../components/wikipedia";
 
+function Home() {
+  return (
+    <>
+      <Header titulo="Fascismo na Itália" />
 
-
-import "./zpages.css"
-  //  Import das imagens
- import Img1 from "../assets/conflitosSecXX/fascismoItaliano/img1.jpg";
- import Img2 from "../assets/conflitosSecXX/fascismoItaliano/img2.jpg";
- 
- //Componentes
-    import Header from "../components/header"
-    import Footer from "../components/footer"
-    import CardText from "../components/cartText"
-   import BtnCurtida from "../components/botaoCurtida";
-   import CardWikipedia from '../components/wikipedia'
-
-function Home(){
-    
-    return(
-        <>
-
-        <Header titulo='Fascismo na Itália' />
-          
-
-<CardText 
- texto='      O fascismo na Itália foi um período em que esse país foi
+      <CardText
+        texto="      O fascismo na Itália foi um período em que esse país foi
                  governado por um partido político conservador, radical e de
                  extrema-direita, de 1922 e 1943, embora tenha se sustentado no
                  poder, de alguma forma, até 1945. O fascismo surgiu, em 1919,
@@ -33,10 +26,11 @@ function Home(){
                  Guerra Mundial. Usava da violência para alcançar os seus
                  objetivos e cresceu consideravelmente violentando os socialistas
                  na Europa. Benito Mussolini foi executado no final da Segunda
-                 Guerra Mundial.' 
- img={Img1}  />
-<CardText 
- texto='    O termo fascismo pode ser usado em diferentes contextos, sendo
+                 Guerra Mundial."
+        img={Img1}
+      />
+      <CardText
+        texto="    O termo fascismo pode ser usado em diferentes contextos, sendo
                  mais relacionado ao governo liderado por Benito Mussolini
                  (chamado de Duce pelos fascistas), que governou a Itália até
                  1943. Outro sentido que pode ser empregado ao termo é o de uma
@@ -56,34 +50,32 @@ function Home(){
                  usou-se, para tanto, o feixe. Os feixes unidos eram um símbolo
                  que transmitia a ideia de força por meio da união, e até o nome
                  do partido se originou dessa associação. A palavra fascismo vem
-                 de fascio, do italiano, cujo sentido se refere a tais feixes.' 
- img={Img2}  />
+                 de fascio, do italiano, cujo sentido se refere a tais feixes."
+        img={Img2}
+      />
 
+      <BtnCurtida id="Fascismo-Italiano" />
 
+      <CardWikipedia termoBusca="Fascismo na Itália" />
 
-<BtnCurtida id='Fascismo-Italiano'/>
+      <BtnCurtida id="wikpedia-Fascismo-Italiano" />
 
-
-<CardWikipedia termoBusca="Fascismo na Itália"  />
-
-<BtnCurtida id='wikpedia-Fascismo-Italiano'/>
-
-
-   <iframe className="videoyt"
-             width="560"
-             height="315"
-             src="https://www.youtube.com/embed/O6q1G4fjUx8?si=OtFXyEurb91sPgY4"
-             title="YouTube video player"
-             frameborder="0"
-             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerpolicy="strict-origin-when-cross-origin"
-             allowfullscreen
-           ></iframe>
-
-            <Footer />
-        </>
-    )
+      <center>
+        <iframe
+          className="videoyt"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/O6q1G4fjUx8?si=OtFXyEurb91sPgY4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </center>
+      <Footer />
+    </>
+  );
 }
 
-export default Home
-
+export default Home;

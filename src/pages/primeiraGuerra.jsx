@@ -1,26 +1,23 @@
+import "./zpages.css";
+//Import das imagens
+import Img1 from "../assets/conflitosSecXX/primeiraGuerra/img2.webp";
+import Img2 from "../assets/conflitosSecXX/primeiraGuerra/img4.webp";
+import Img3 from "../assets/conflitosSecXX/primeiraGuerra/img5.jpg";
+//Componentes
+import Header from "../components/header";
+import Footer from "../components/footer";
+import CardText from "../components/cartText";
+import BtnCurtida from "../components/botaoCurtida";
+import CardWikipedia from "../components/wikipedia";
 
-import "./zpages.css"
-  //Import das imagens
- import Img1 from "../assets/conflitosSecXX/primeiraGuerra/img2.webp";
- import Img2 from "../assets/conflitosSecXX/primeiraGuerra/img4.webp";
- import Img3 from "../assets/conflitosSecXX/primeiraGuerra/img5.jpg";
- //Componentes
-    import Header from "../components/header"
-    import Footer from "../components/footer"
-    import CardText from "../components/cartText"
-   import BtnCurtida from "../components/botaoCurtida";
-   import CardWikipedia from '../components/wikipedia'
+function Home() {
+  return (
+    <>
+      <Header titulo="Primeira Guerra Mundial" />
 
-
-function Home(){
-    
-    return(
-        <>
-            <Header titulo='Primeira Guerra Mundial' />
-          
-
-<CardText id='topic1'
- texto='  A Primeira Guerra Mundial, que ocorreu entre 1914 e 1918, foi um
+      <CardText
+        id="topic1"
+        texto="  A Primeira Guerra Mundial, que ocorreu entre 1914 e 1918, foi um
                  conflito de escala mundial, envolvendo as grandes potências
                  econômicas e militares da época. Os antecedentes remontam até o
                  século XIX, quando as disputas imperialistas por colônias na
@@ -37,10 +34,12 @@ function Home(){
                  do trono austro-húngaro, em Sarajevo, no dia 28 de junho de
                  1914, feito por um militante sérvio. Esse ato desencadeou uma
                  onda de declarações de guerra, impulsionadas pelas alianças
-                 estabelecidas entre os países.' 
- img={Img1}  />
-<CardText id='topic1'
- texto='     A Primeira Guerra Mundial se desenrolou em duas fases
+                 estabelecidas entre os países."
+        img={Img1}
+      />
+      <CardText
+        id="topic1"
+        texto="     A Primeira Guerra Mundial se desenrolou em duas fases
                  principais. A primeira, a guerra de movimento, foi marcada por
                  rápidos avanços e tentativas de ocupação territorial. Já a
                  segunda, a guerra de trincheiras, dominou grande parte do
@@ -54,10 +53,12 @@ function Home(){
                  significativos mudaram o rumo da guerra: a saída da Rússia, em
                  função da Revolução Russa, e a entrada dos Estados Unidos ao
                  lado da Entente. A participação dos EUA, com seu potencial
-                 humano e industrial, foi fundamental para a vitória dos Aliados.' 
- img={Img2}  />
-<CardText id='topic1'
- texto='     A guerra chegou ao fim em 11 de novembro de 1918, com a derrota
+                 humano e industrial, foi fundamental para a vitória dos Aliados."
+        img={Img2}
+      />
+      <CardText
+        id="topic1"
+        texto="     A guerra chegou ao fim em 11 de novembro de 1918, com a derrota
                  das Potências Centrais. Em 1919, foi assinado o Tratado de
                  Versalhes, que impôs duras condições à Alemanha, considerada a
                  principal responsável pelo conflito. Esse tratado gerou um clima
@@ -67,33 +68,31 @@ function Home(){
                  feridos. Ela também redesenhou o mapa da Europa, resultando no
                  fim de impérios como o Austro-Húngaro, o Otomano e o Russo,
                  marcando o declínio da Europa e a ascensão dos Estados Unidos
-                 como uma potência global.' 
- img={Img3}  />
+                 como uma potência global."
+        img={Img3}
+      />
 
+      <BtnCurtida id="Primeira-Guerra-Mundial" />
 
-<BtnCurtida id='Primeira-Guerra-Mundial'/>
+      <CardWikipedia termoBusca="Primeira Guerra Mundial" />
+      <BtnCurtida id="Wikipedia-Primeira-Guerra-Mundial" />
 
-
-
-<CardWikipedia termoBusca="Primeira Guerra Mundial" />
-<BtnCurtida id='Wikipedia-Primeira-Guerra-Mundial'/>
-
-
-
- <iframe
-             className="videoyt"
-             width="560"
-             height="315"
-             src="https://www.youtube.com/embed/D4JmMBC28x8?si=WJyy0fLt8NfnkjMw"
-             title="YouTube video player"
-             frameBorder="0"
-             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerPolicy="strict-origin-when-cross-origin"
-             allowFullScreen
-           ></iframe>
-            <Footer />
-        </>
-    )
+      <center>
+        <iframe
+          className="videoyt"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/D4JmMBC28x8?si=WJyy0fLt8NfnkjMw"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </center>
+      <Footer />
+    </>
+  );
 }
 
-export default Home
+export default Home;

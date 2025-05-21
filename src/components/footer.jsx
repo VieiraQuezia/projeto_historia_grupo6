@@ -77,8 +77,8 @@ function Footer() {
         <br />
         <section className="informacoes">
           <section className="sobreNos">
-            <p>
-              <h4> Tropa da Mandioca © 2025 </h4> – Nosso site, desenvolvido com
+            
+              <h4> Tropa da Mandioca © 2025 </h4> <p> – Nosso site, desenvolvido com
               React, React Router, useEffect e useState, permite que os usuários
               comparem dois tipos de resumo (autoral e Wikipédia) sobre temas
               históricos. As avaliações são registradas com botões de curtir e
@@ -111,7 +111,7 @@ function Footer() {
               <li>Hayeska Loredane Alves Machado</li>
               <li>Leonardo Mori Vicente</li>
               <li>Quezia Amaral Vieira</li>
-            </ul>{" "}
+            </ul>
           </section>
         </section>
       </section>

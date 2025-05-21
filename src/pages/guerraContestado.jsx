@@ -1,34 +1,24 @@
-
-
-
-
-import "./zpages.css"
- // Import das imagens
- import Img1 from "../assets/conflitosSecXX/guerraContestado/img1.jpg";
- import Img2 from "../assets/conflitosSecXX/guerraContestado/img2.webp";
+import "./zpages.css";
+// Import das imagens
+import Img1 from "../assets/conflitosSecXX/guerraContestado/img1.jpg";
+import Img2 from "../assets/conflitosSecXX/guerraContestado/img2.webp";
 
 // Componentes
-    import Header from "../components/header"
-    import Footer from "../components/footer"
-    import CardText from "../components/cartText"
-   import BtnCurtida from "../components/botaoCurtida";
-   import CardWikipedia from '../components/wikipedia'
-
+import Header from "../components/header";
+import Footer from "../components/footer";
+import CardText from "../components/cartText";
+import BtnCurtida from "../components/botaoCurtida";
+import CardWikipedia from "../components/wikipedia";
 
 // imagens
 
+function Home() {
+  return (
+    <>
+      <Header titulo="Guerra do Contestado" />
 
-
-
-function Home(){
-    
-    return(
-        <>
-            <Header titulo='Guerra do Contestado' />
-          
-
-<CardText 
- texto='      A Guerra do Contestado foi um conflito ocorrido de 1912 a 1916
+      <CardText
+        texto="      A Guerra do Contestado foi um conflito ocorrido de 1912 a 1916
                  na divisa entre Santa Catarina e Paraná por disputas de terra.
                  Recebeu esse nome pois era uma região contestada, ou seja,
                  disputada, devido à abundância de erva-mate. Era projetada a
@@ -43,10 +33,11 @@ function Home(){
                  como líder causou incômodo na Igreja Católica e coronéis. O
                  governo federal, preocupado com a formação das comunidades,
                  enviou tropas para a região, as quais não obtiveram vitória
-                 contra os sertanejos.' 
- img={Img1}  />
-<CardText 
- texto='      Com a perda das terras após a inauguração da estrada, houve uma
+                 contra os sertanejos."
+        img={Img1}
+      />
+      <CardText
+        texto="      Com a perda das terras após a inauguração da estrada, houve uma
                  revolta por parte dos trabalhadores, iniciando um levante armado
                  liderado por José Maria em busca de um governo independente. Em
                  reação, o então presidente da república Hermes da Fonseca enviou
@@ -58,35 +49,32 @@ function Home(){
                  que envolveram armamentos pesados e aviões de artilharia. As
                  questões envolvendo a área da divisa foram resolvidas por meio
                  de um acordo assinado entre paranaenses e catarinenses,
-                 principal consequência da guerra.' 
- img={Img2}  />
+                 principal consequência da guerra."
+        img={Img2}
+      />
 
+      <BtnCurtida />
 
+      <CardWikipedia termoBusca="Guerra do Contestado" />
 
-<BtnCurtida/>
+      <BtnCurtida id="wikpedia-Guerra-Contestado" />
 
-
-<CardWikipedia termoBusca="Guerra do Contestado"  />
-
-<BtnCurtida id='wikpedia-Guerra-Contestado'/>
-
-
- <iframe className="videoyt"
-             width="560"
-             height="315"
-             src="https://www.youtube.com/embed/LskOERMUYng?si=rU1efCvC-Hr9tC8A"
-             title="YouTube video player"
-             frameborder="0"
-             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerpolicy="strict-origin-when-cross-origin"
-             allowfullscreen
-           ></iframe>
-
-            <Footer />
-        </>
-    )
+      <center>
+        <iframe
+          className="videoyt"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/LskOERMUYng?si=rU1efCvC-Hr9tC8A"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </center>
+      <Footer />
+    </>
+  );
 }
 
-export default Home
-
-
+export default Home;
