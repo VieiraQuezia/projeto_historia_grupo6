@@ -52,8 +52,8 @@ const CardComNav = () => {
                 americanas causou a quebra da economia.
               </p>
             </div>
-            <BtnCurtida id="Crise-1929" />
           </div>
+            <BtnCurtida id="Crise-1929" />
 
           <div className="card">
             <img src={Img2} alt="Imagem fixa" className="static-img" />

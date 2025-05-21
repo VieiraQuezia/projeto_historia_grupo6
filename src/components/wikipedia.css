@@ -1,0 +1,62 @@
+.card {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img.static-img {
+  width: 40%;
+  height: auto;
+}
+
+.card-content {
+  width: 90%;
+  padding: 24px;
+}
+
+.card-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.card-content p {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.wiki-img {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  max-width: 100%;
+  height: auto;
+}
+
+.wiki-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.erro {
+  color: red;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .card img.static-img {
+    width: 60%;
+  }
+
+  .card-content h2 {
+    font-size: 22px;
+  }
+}

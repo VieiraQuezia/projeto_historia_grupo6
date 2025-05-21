@@ -49,7 +49,6 @@ const CardComNav = () => {
                 que ali vivia.
               </p>
             </div>
-            <BtnCurtida id="Guerra-De-Canudos" />
           </div>
 
           <div className="card">
@@ -86,8 +85,9 @@ const CardComNav = () => {
                 fundamentais para o desenvolvimento da sociologia.
               </p>
             </div>
-            <BtnCurtida id="Guerra-De-Canudos" />
           </div>
+                      <BtnCurtida id="Guerra-De-Canudos" />
+
              <iframe className="videoyt"
             width="560"
             height="315"

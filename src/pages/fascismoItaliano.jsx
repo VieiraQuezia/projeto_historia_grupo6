@@ -37,7 +37,6 @@ const CardComNav = () => {
                 Guerra Mundial.
               </p>
             </div>
-            <BtnCurtida id="Guerra-De-Canudos" />
           </div>
 
           <div className="card">

@@ -47,7 +47,6 @@ const CardComNav = () => {
                 russos, que eram chamados de comunistas.
               </p>
             </div>
-                      <BtnCurtida id="Revolucao-Russa" />
 
           </div>
 

@@ -1,25 +1,42 @@
-header{
-  background-color: #8C1C13;
-  color: white;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Header Box */
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+margin-left: 5%;
+    background-color:#8C1C13;
+margin-top: 2%;
+width: 90%;
+position: fixed;
+padding: 0.1% 1% 0.1% 1%;
+color: #eff2f4;
+}
+
+/* Logo */
+.logoHeader {
+    width: 20%;
+    height:20%;
+    transition: all 1s ease
+}
 
 
-  a{
+
+/* Título */
+.headerBox h1 {
+    font-size: 3em;
+    transition: all 1s ease;
+    font-family:'Courier New', Courier, monospace;
+    a{
         color: #eff2f4;
         text-decoration: none;
   
     }
+   
 }
 
 
-.Logo{
-  width: 10%;
-  height: 5%;
-}
-  
 
 /* -------------------------------------------------- */
 .bx-menu{
@@ -28,18 +45,19 @@ font-size: 3vw;
 border-style: none;
 border-color: #849cc8;
 
+
 }
 .menu {
-    background-color: #f0f0f0; /* Cor de fundo do menu */
-    padding: 3%; /* Preenchimento interno */
-    position: absolute; /* Para posicionar o menu */
-    top:85px; /* Ajuste conforme necessário */
-    right: 0; /* Alinhado à esquerda */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para o menu */
-    display: flex;
-    align-items:flex-end;
-    flex-direction: column;
-    
+  background-color: white;
+  padding: 3%;
+  position: fixed;
+  top: 85px;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: 999;
 }
 
 .menu ul {
@@ -61,24 +79,41 @@ border-color: #849cc8;
     color: black; /* Cor do texto */
 }
 
-/* ----------------------------------------------------- */
 
-.botao-tema {
-    background-color: transparent;
-    border: 1px solid #ccc;
-    color: inherit;
-    padding: 6px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 10px;
-}
+/* Responsividade para telas pequenas */
+@media (max-width: 1024px) {
+  .headerBox h1 {
+    font-size: 150%;
+    text-align: center;
+  }
 
-.botao-tema:hover {
-    background-color: rgba(200, 200, 200, 0.2);
-}
-/* ----------------------------- */
-.bx-like{
-    font-size: 3vw;
+  .bx-menu {
+    font-size: 8vw;
+        transition: all 2s;
 
+  }
+
+  /* 🔽 Menu vira bloco abaixo do header */
+  .menu {
+    position: relative;
+    width: 80%;
+    box-shadow: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-top:-3% ;
+
+
+    position: fixed;
+  }
+
+  .menu ul {
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 8px 0;
+  }
 }
+/* ---------------------------------------------------------------- */

@@ -41,7 +41,6 @@ const CardComNav = () => {
                 contra os sertanejos.
               </p>
             </div>
-                      <BtnCurtida id="Guerra-Contestado" />
 
           </div>
 
@@ -65,9 +64,10 @@ const CardComNav = () => {
                 principal consequência da guerra.
               </p>
             </div>
-                      <BtnCurtida id="Guerra-Contestado" />
 
           </div>
+                                <BtnCurtida id="Guerra-Contestado" />
+
 
           <iframe className="videoyt"
             width="560"

@@ -43,7 +43,6 @@ const CardComNav = () => {
                 candidato a vice-presidente João Pessoa, em julho de 1930.
               </p>
             </div>
-                      <BtnCurtida id="Revolucao-30" />
 
           </div>
 
@@ -63,9 +62,10 @@ const CardComNav = () => {
                 modernização do país.
               </p>
             </div>
-                      <BtnCurtida id="Revolucao-30" />
 
           </div>
+                                <BtnCurtida id="Revolucao-30" />
+
 
           <iframe className="videoyt"
             width="560"

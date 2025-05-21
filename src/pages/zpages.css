@@ -1,152 +1,61 @@
-/* ____________________________ CONTAINER E ESTRUTURA GERAL ____________________________ */
-.container {
-  display: flex;
-  flex-direction: row;
-  background-color: #E7D7C1;
-  font-family: sans-serif;
-  padding: 2rem;
-  margin-left: -2%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/* ____________________________ NAVEGAÇÃO PRINCIPAL ____________________________ */
-.main-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 99vw;
+    height: 40vh;
+
+    color: white;
 }
 
-/* ____________________________ CARD PADRÃO ____________________________ */
-.card {
-  display: flex;
-  flex-direction: row;
-  background-color: #A78A7F;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
-  margin: 0 auto;
-  margin-left: 7%;
-  margin-right: auto;
-  width: 100%;
+/* Banner Titulo */
+.banner h1{
+    font-size: 3em;
 }
 
-/* ____________________________ IMAGENS DOS CARDS ____________________________ */
-.card img {
-  width: 40%;
-  object-fit: cover;
-  padding: 2rem;
+/* Fundo do texto no banner */
+#bandeira {
+    background-color: #3b3c3d;
+    padding: 0em 1em 0em 1em;
 }
 
-.imgespecifico {
-  width: 40%;
-  height: auto;
-  object-fit: cover;
-  padding: 2rem;
+/* Palavras em Azul */
+#azul {
+    color: #5e6163;
 }
 
-/* ____________________________ CONTEÚDO DOS CARDS ____________________________ */
-.card-content {
-  width: 60%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* Icone invertido */
+.banner i {
+    transform: scaleX(-1);
 }
 
-.card-content h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
+.TituloDosPacotes{
+    padding-top: 2.5em;
+    padding-left: 4em;
+    padding-right: 1.3em;
+    font-family: "Sriracha", cursive;
+    font-size: 1.3em;
 }
 
-.card-primeira {
-  line-height: 1.6;
-  margin-bottom: 1rem;
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2em;
+    width: 99vw;
+    height: 70vh;
+    padding-bottom: 10em;
 }
 
-/* ____________________________ VÍDEO YOUTUBE ____________________________ */
-.videoyt {
-  margin: 2rem auto;
-  max-width: 100%;
-  border-radius: 12px;
-}
-
-/* ____________________________ TÍTULO VÍDEO ____________________________ */
-h2 {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-}
-
-/* ____________________________ ANÚNCIO ____________________________ */
-.anuncio-img {
-  width: 100%;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-/* ____________________________ HOME (OUTRA PÁGINA) ____________________________ */
-.meioHome {
-  background-color: #a48c7c;
-  display: flex;
-  min-height: 100vh;
-}
-
-.blocoHome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: #735751;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex-direction: row;
-  margin-bottom: 5%;
-}
-
-.blocoHome img {
-  padding-top: 10%;
-  padding-left: 5%;
-  width: 40%;
-  height: 50%;
-}
-
-/* ____________________________ FOTO GRUPO / OUTRAS IMG ____________________________ */
-.fotogrupo {
-  padding-top: 4%;
-  padding-left: 5%;
-  width: 40%;
-  height: auto;
-  margin: auto 0;
-}
-
-/* ____________________________ RANKING / CURTIDAS ____________________________ */
-.resumo-curtidas {
-  padding: 2rem;
-  background-color: #fdfdfd;
-  max-width: 600px;
-  margin: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.resumo-curtidas h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.resumo-curtidas ul {
-  list-style: none;
-  padding: 0;
-}
-
-.resumo-curtidas li {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+@media (min-width: 480px) and (max-width: 760px) {
+    .banner{
+        font-size: 2vw;
+    }
+    
 }
