@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import "./zpages.css";
 // Import das imagens
 import Img1 from "../assets/conflitosSecXX/guerraContestado/img1.jpg";
 import Img2 from "../assets/conflitosSecXX/guerraContestado/img2.webp";
+=======
+import "./zpages.css"
+ // Import das imagens
+ import Img1 from "../assets/conflitosSecXX/guerraContestado/img1.jpg";
+ import Img2 from "../assets/conflitosSecXX/guerraContestado/img2.webp";
+>>>>>>> 983ddb0ab26e30b3eae9a369a5b053f8d3bc25c4
 
 // Componentes
 import Header from "../components/header";
@@ -53,7 +60,7 @@ function Home() {
         img={Img2}
       />
 
-      <BtnCurtida />
+      <BtnCurtida id='Guerra-Contestado' />
 
       <CardWikipedia termoBusca="Guerra do Contestado" />
 
