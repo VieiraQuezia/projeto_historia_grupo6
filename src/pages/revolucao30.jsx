@@ -102,7 +102,6 @@ function Home() {
       <Header titulo="Revolução de 1930" />
 
       <CardText
-        
         texto="  A Revolução de 1930 foi um movimento armado de alcance nacional,
                   liderado por Getúlio Vargas, então governador do Rio Grande do
                   Sul. Esse levante resultou na deposição do presidente Washington
@@ -124,7 +123,6 @@ function Home() {
         img={Img1}
       />
       <CardText
-        
         texto="     A revolução teve início em 3 de outubro de 1930, com confrontos
                   entre forças revolucionárias e tropas federais. Em menos de um
                   mês, os revolucionários conseguiram depor Washington Luís. Em 3
@@ -143,10 +141,9 @@ function Home() {
 
       <center>
         <iframe
-          className="videoyt"
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/O6q1G4fjUx8?si=OtFXyEurb91sPgY4"
+          src="https://www.youtube.com/embed/cH5HPE11qg4?si=mLhaiOlUzmN42S6R"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
