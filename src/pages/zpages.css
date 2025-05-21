@@ -1,4 +1,13 @@
 
+
+/* Tema escuro aplicado diretamente a elementos individuais */
+
+.container.tema-escuro {
+  background-color: #000;
+  color: #fff;
+}
+
+
 /* _______________________________________ FASCISMO ITALIANO & GUERRA DE CANUDOS_________________________________________ */
 .container {
     display: flex;

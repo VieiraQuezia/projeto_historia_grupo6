@@ -13,11 +13,14 @@ function Header(props) {
   const menuRef = useRef(null);
   const botaoMenuRef = useRef(null);
 
-  useEffect(() => {
-    document.body.style.backgroundColor = temaEscuro ? '#000' : '#fff';
-    document.body.style.color = temaEscuro ? '#fff' : '#000';
-    localStorage.setItem('temaEscuro', temaEscuro);
-  }, [temaEscuro]);
+useEffect(() => {
+  const elementos = document.querySelectorAll('.container, .main-nav, .card');
+  elementos.forEach((el) => {
+    el.classList.toggle('tema-escuro', temaEscuro);
+  });
+  localStorage.setItem('temaEscuro', temaEscuro);
+}, [temaEscuro]);
+
 
   // Fecha o menu ao clicar fora dele
   useEffect(() => {
@@ -81,9 +84,7 @@ function Header(props) {
             <li><Link to="/fascismo">Fascismo Italiano</Link></li>
             <li><Link to="/crise-29">Crise de 1929</Link></li>
             <li><Link to="/revolucao-1930">Revolução de 1930</Link></li>
-            <li></li>
-            <li><Link to="/ranking">Ranking </Link></li>
-
+            <li><Link to="/ranking">Ranking</Link></li>
           </ul>
         </nav>
       )}
