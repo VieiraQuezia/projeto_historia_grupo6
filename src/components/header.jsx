@@ -90,7 +90,6 @@
 // export default Header;
 import { Link } from "react-router-dom";
 
-import logo from "/logoSeculoChamas.png";
 import { useEffect, useRef, useState } from "react";
 import "./header.css";
 
