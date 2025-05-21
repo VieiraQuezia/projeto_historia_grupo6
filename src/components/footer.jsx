@@ -73,19 +73,19 @@ function Footer() {
             <p> 📩 Email para Contato: tropadamandioca6@gmail.com</p>
           </section>
         </section>
-  
-<br />
+
+        <br />
         <section className="informacoes">
           <section className="sobreNos">
             <p>
               <h4> Tropa da Mandioca © 2025 </h4> – Nosso site, desenvolvido com
               React, React Router, useEffect e useState, permite que os usuários
-              adicionem Pokémon aos favoritos a partir de uma API. Os dados são
-              armazenados no localStorage e exibidos dinamicamente em outra
-              página, onde também é possível remover um Pokémon dos favoritos.💗
+              comparem dois tipos de resumo (autoral e Wikipédia) sobre temas
+              históricos. As avaliações são registradas com botões de curtir e
+              não curtir, salvas no localStorage e exibidas dinamicamente em uma
+              página de ranking. 📚✨
             </p>
           </section>
-
 
           <section className="listas">
             <h4> Sistemas: </h4>
@@ -95,7 +95,6 @@ function Footer() {
               <li>React Router Dom</li>
             </ul>
           </section>
-
         </section>
         <nav className="logos">
           {/* <img className="imgLogo" src={logo}/> */}
