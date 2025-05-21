@@ -24,7 +24,7 @@ function Home() {
       />
       <CardText
         texto="O movimento foi dividido em dois tempos. Em fevereiro (Revolução Branca), o aborrecimento do povo provocou a queda do Czar Nicolau II e estabeleceu um governo provisório que manteve o país em guerra e não houve grandes reformas sociais. Já em outubro (Revolução Vermelha) foi quando a guerra, de fato se iniciou, os bolcheviques, liderados por Lenin, assumiram o poder propondo a paz, a terra e o pão. Assim, para que a Rússia se tornasse o primeiro Estado socialista, foi preciso que suas terras e indústrias fossem nacionalizadas e o país fosse retirado da 1ª guerra mundial."
-        img={Img2}
+        img={Img2} 
       />
 
       <CardText
@@ -32,9 +32,9 @@ function Home() {
         img={Img3}
       />
 
-      <BtnCurtida id="Revolução-Russa" />
+      <BtnCurtida id="Revolução-Russa"/>
 
-      <CardWikipedia termoBusca="Revolução Russa" />
+      <CardWikipedia termoBusca="Revolução Russa"/>
 
       <Footer />
     </>
