@@ -64,7 +64,6 @@
 //           </div>
 //                                 <BtnCurtida id="Revolucao-30" />
 
-
 //           <iframe className="videoyt"
 //             width="560"
 //             height="315"
@@ -85,29 +84,26 @@
 
 // export default CardComNav;
 
+import "./zpages.css";
+//Import das imagens
+import Img1 from "../assets/conflitosSecXX/revolucao1930/img1.jpg";
+import Img2 from "../assets/conflitosSecXX/revolucao1930/img2.jpg";
+import Img3 from "../assets/conflitosSecXX/revolucao1930/img3.jpg";
+//Componentes
+import Header from "../components/header";
+import Footer from "../components/footer";
+import CardText from "../components/cartText";
+import BtnCurtida from "../components/botaoCurtida";
+import CardWikipedia from "../components/wikipedia";
 
-import "./zpages.css"
-  //Import das imagens
-  import Img1 from "../assets/conflitosSecXX/revolucao1930/img1.jpg";
- import Img2 from "../assets/conflitosSecXX/revolucao1930/img2.jpg";
- import Img3 from "../assets/conflitosSecXX/revolucao1930/img3.jpg";
- //Componentes
-    import Header from "../components/header"
-    import Footer from "../components/footer"
-    import CardText from "../components/cartText"
-   import BtnCurtida from "../components/botaoCurtida";
-   import CardWikipedia from '../components/wikipedia'
+function Home() {
+  return (
+    <>
+      <Header titulo="Revolução de 1930" />
 
-
-function Home(){
-    
-    return(
-        <>
-            <Header titulo='Revolução de 1930' />
-          
-
-<CardText id='topic1'
- texto='  A Revolução de 1930 foi um movimento armado de alcance nacional,
+      <CardText
+        id="topic1"
+        texto="  A Revolução de 1930 foi um movimento armado de alcance nacional,
                   liderado por Getúlio Vargas, então governador do Rio Grande do
                   Sul. Esse levante resultou na deposição do presidente Washington
                   Luís e impediu a posse do presidente eleito Júlio Prestes,
@@ -124,10 +120,12 @@ function Home(){
                   Além disso, os demais estados brasileiros estavam crescendo em
                   importância e reivindicando mais espaço no cenário político
                   brasileiro. O estopim da revolução foi o assassinato do
-                  candidato a vice-presidente João Pessoa, em julho de 1930.' 
- img={Img1}  />
-<CardText id='topic1'
- texto='     A revolução teve início em 3 de outubro de 1930, com confrontos
+                  candidato a vice-presidente João Pessoa, em julho de 1930."
+        img={Img1}
+      />
+      <CardText
+        id="topic1"
+        texto="     A revolução teve início em 3 de outubro de 1930, com confrontos
                   entre forças revolucionárias e tropas federais. Em menos de um
                   mês, os revolucionários conseguiram depor Washington Luís. Em 3
                   de novembro, Getúlio Vargas assumiu a liderança do Governo
@@ -135,29 +133,30 @@ function Home(){
                   das oligarquias estaduais sobre a política nacional; Vargas
                   iniciou um processo de centralização administrativa, reduzindo a
                   autonomia dos estados, além do incentivo à industrialização e à
-                  modernização do país.' 
- img={Img2}  />
+                  modernização do país."
+        img={Img2}
+      />
 
+      <BtnCurtida id="Primeira-Guerra-Mundial" />
 
+      <CardWikipedia termoBusca="Revolução de 1930" imagem={Img3} />
 
-<BtnCurtida id='Primeira-Guerra-Mundial'/>
-
-
-<CardWikipedia termoBusca="Primeira Guerra Mundial" imagem={Img3} />
- <iframe
-             className="videoyt"
-             width="560"
-             height="315"
-             src="https://www.youtube.com/embed/D4JmMBC28x8?si=WJyy0fLt8NfnkjMw"
-             title="YouTube video player"
-             frameBorder="0"
-             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerPolicy="strict-origin-when-cross-origin"
-             allowFullScreen
-           ></iframe>
-            <Footer />
-        </>
-    )
+      <center>
+        <iframe
+          className="videoyt"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/O6q1G4fjUx8?si=OtFXyEurb91sPgY4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </center>
+      <Footer />
+    </>
+  );
 }
 
-export default Home
+export default Home;

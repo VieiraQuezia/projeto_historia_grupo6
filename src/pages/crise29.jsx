@@ -57,7 +57,19 @@ Em 1933, o acordo criado para restaurar a economia foi chamado de New Deal, cria
 <BtnCurtida  id='Crise-de-1929'/>
 
 
-<CardWikipedia termoBusca="Crise de 1929" imagem={Img3} />
+<CardWikipedia termoBusca="Crise de 1929" />
+
+<center>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/msxfuH56wXE?si=psgpR5gBRpi-P7uh" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen> 
+</iframe>
+</center>
 
             <Footer />
         </>

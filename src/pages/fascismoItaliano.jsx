@@ -22,7 +22,7 @@ function Home(){
         <Header titulo='Fascismo na Itália' />
           
 
-<CardText id='topic1'
+<CardText 
  texto='      O fascismo na Itália foi um período em que esse país foi
                  governado por um partido político conservador, radical e de
                  extrema-direita, de 1922 e 1943, embora tenha se sustentado no
@@ -35,7 +35,7 @@ function Home(){
                  na Europa. Benito Mussolini foi executado no final da Segunda
                  Guerra Mundial.' 
  img={Img1}  />
-<CardText id='topic1'
+<CardText 
  texto='    O termo fascismo pode ser usado em diferentes contextos, sendo
                  mais relacionado ao governo liderado por Benito Mussolini
                  (chamado de Duce pelos fascistas), que governou a Itália até
@@ -61,10 +61,14 @@ function Home(){
 
 
 
-<BtnCurtida/>
+<BtnCurtida id='Fascismo-Italiano'/>
 
 
 <CardWikipedia termoBusca="Fascismo na Itália"  />
+
+<BtnCurtida id='wikpedia-Fascismo-Italiano'/>
+
+
    <iframe className="videoyt"
              width="560"
              height="315"

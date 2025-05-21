@@ -36,6 +36,10 @@ const CardWikipedia = ({ termoBusca, imagem }) => {
 
   return (
     <div className="card">
+<h1>Pesquisa feita pela API da Wikipedia </h1>
+<br />
+
+
       {imagem && (
         <img src={imagem} alt="Imagem ilustrativa" className="static-img" />
       )}
