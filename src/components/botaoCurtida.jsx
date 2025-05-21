@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const BtnCurtida = ({ id }) => {
   const CHAVE_LOCAL = "curtidasTotais";
