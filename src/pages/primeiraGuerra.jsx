@@ -23,7 +23,7 @@ const CardComNav = () => {
             <img src={Img1} alt="Imagem fixa" className="static-img" />
 
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A Primeira Guerra Mundial, que ocorreu entre 1914 e 1918, foi um
                 conflito de escala mundial, envolvendo as grandes potências
                 econômicas e militares da época. Os antecedentes remontam até o
@@ -52,7 +52,7 @@ const CardComNav = () => {
             <img src={Img2} alt="Imagem fixa" className="static-img" />
 
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A Primeira Guerra Mundial se desenrolou em duas fases
                 principais. A primeira, a guerra de movimento, foi marcada por
                 rápidos avanços e tentativas de ocupação territorial. Já a
@@ -78,7 +78,7 @@ const CardComNav = () => {
             <img src={Img3} alt="Imagem fixa" className="imgespecifico" />
 
             <div className="card-content">
-              <p className="card-text">
+              <p className="card-primeira">
                 A guerra chegou ao fim em 11 de novembro de 1918, com a derrota
                 das Potências Centrais. Em 1919, foi assinado o Tratado de
                 Versalhes, que impôs duras condições à Alemanha, considerada a
