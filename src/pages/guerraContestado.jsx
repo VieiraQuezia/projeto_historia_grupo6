@@ -68,6 +68,9 @@ function Home(){
 
 <CardWikipedia termoBusca="Guerra do Contestado"  />
 
+<BtnCurtida id='wikpedia-Guerra-Contestado'/>
+
+
  <iframe className="videoyt"
              width="560"
              height="315"
