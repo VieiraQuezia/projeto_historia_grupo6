@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./wikipedia.css"; // Importa o CSS separado
 
-const CardWikipedia = ({ termoBusca, imagem }) => {
+const CardWikipedia = ({ termoBusca}) => {
   const [dado, setDado] = useState(null);
   const [erro, setErro] = useState("");
   const [loading, setLoading] = useState(true);
@@ -40,12 +40,15 @@ const CardWikipedia = ({ termoBusca, imagem }) => {
 <br />
 
 
-      {imagem && (
-        <img src={imagem} alt="Imagem ilustrativa" className="static-img" />
-      )}
+     
       <div className="card-content">
+
         {loading && <p>Carregando...</p>}
+
+
         {erro && <p className="erro">{erro}</p>}
+
+
         {!loading && dado && (
           <div className="api-section">
             <h2>{dado.title}</h2>
