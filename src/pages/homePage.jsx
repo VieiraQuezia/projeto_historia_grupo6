@@ -41,9 +41,9 @@ function Home() {
       />
        
 <center>
-      <a className=""  href="https://sites.google.com/docente.senai.br/projeto-integrado-historia-xx/home?authuser=0.'">visite o site oficial do projeto</a>
+      <a className=""  href="https://sites.google.com/docente.senai.br/projeto-integrado-historia-xx/home?authuser=0.'"> <h2> Visite o site oficial do projeto</h2></a>
 </center>
-
+<br />
       <Footer />
     </>
   );
