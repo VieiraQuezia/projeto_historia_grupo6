@@ -48,10 +48,10 @@ Em 1933, o acordo criado para restaurar a economia foi chamado de New Deal, cria
           height="315"
           src="https://www.youtube.com/embed/msxfuH56wXE?si=psgpR5gBRpi-P7uh"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
         ></iframe>
       </center>
 
