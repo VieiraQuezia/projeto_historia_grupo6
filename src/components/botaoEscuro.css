@@ -1,17 +1,42 @@
-
-
-
-
-.botao-Escuro .modo-escuro {
-  background-color: white;
-  color: black;
+body {
+  background-color: #FFFBF3;
+  color: #1f1f1f;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-.botao-Escuro {
-  padding: 8px 16px;
-  background-color: black;
-  color: white;
+/* Tema escuro ativado */
+[data-theme="dark"] .botao-tema {
+  color: #a5d5ff;
+  
+}
+
+
+
+/* Botão de tema */
+.botao-tema {
+  border-radius: 50%;
+  font-size: 1.8vw;
+  background: none;
   border: none;
-  border-radius: 5px;
+  color: inherit;
   cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s, box-shadow 0.3s;
+}
+
+
+
+/* Responsividade para o botão em telas menores */
+@media (max-width: 768px) {
+  .botao-tema {
+      font-size: 2rem; /* Aumentei o tamanho do botão para dispositivos menores */
+      padding: 18px; /* Aumentei o padding para melhorar a interação */
+  }
+}
+
+@media (max-width: 480px) {
+  .botao-tema {
+      font-size: 1.6rem; /* Tamanho maior para telas menores */
+      padding: 20px; /* Aumentei o padding para melhorar a usabilidade */
+  }
 }

@@ -1,39 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import "./botaoEscuro.css";
 
-function BotaoEscuro() {
-  const [escuro, setEscuro] = useState(() =>  {
-            const temaSalvo = localStorage.getItem('temaEscuro') || false; // Pega o valor do localStorage ou define como 'false' se não existir
-            return temaSalvo === 'true'; // Retorna true se o valor for 'true', caso contrário, false
-  }
-  );
-
-
-
+const MudarTema = () => {
+  const temaSalvo = localStorage.getItem('tema') || 'light';
+  const [tema, setTema] = useState(temaSalvo);
 
   useEffect(() => {
-   const elementos = document.querySelectorAll(".cards, .container, .main-nav, .botao-Escuro");
-    if (escuro) {
-      elementos.forEach((elemento) => {
-        elemento.classList.add("modo-escuro");
-      });
-      localStorage.setItem("temaEscuro", true);
-    } else {
-      elementos.forEach((elemento) => {
-        elemento.classList.remove("modo-escuro");
-      });
-      localStorage.setItem("temaEscuro", false);
-    }
-  }, [escuro]);
+    localStorage.setItem('tema', tema);
+    document.documentElement.setAttribute('data-theme', tema);
+  }, [tema]);
+
+  const alternarTema = () => {
+    setTema(prevTema => (prevTema === 'light' ? 'dark' : 'light'));
+  };
 
   return (
-    <>
-      <button onClick={() => setEscuro(!escuro)} className="botao-Escuro">
-        {escuro ? "Modo Claro" : "Modo Escuro"}
+    <div>
+      <button className="botao-tema" onClick={alternarTema}>
+        {tema === 'light' ? <i className='bx bxs-moon'></i> : <i className='bx bxs-sun'></i>}
       </button>
-    </>
+    </div>
   );
-}
+};
 
-export default BotaoEscuro;
-
+export default MudarTema;

@@ -2,7 +2,7 @@
 
 
 import "./cardText.css";
-
+import "../pages/zpages.css";
 const CardComNav = (props) => {
    
 

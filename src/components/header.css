@@ -1,4 +1,22 @@
 
+[data-theme="dark"] .headerBox {
+    background-color: #dbdee4;
+    transition: all 1s ease;
+}
+[data-theme="dark"] .headerBox a{
+color: #1286d4;    
+transition: all 1s ease;
+}
+[data-theme="dark"] .bx-menu{
+color: #1286d4;    
+transition: all 1s ease;
+}
+
+
+
+
+
+
 /* Header Box */
 .headerBox {
     display: flex;

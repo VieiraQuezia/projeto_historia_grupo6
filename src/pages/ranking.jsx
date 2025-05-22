@@ -94,13 +94,7 @@ const ResumoCurtidas = () => {
       <center>
 <button onClick={toggleBtn} className="BtnNum">{BtnNum ? ' Fechar o numero de curtidas' : 'Ver Numero de curtidas' }</button>
 </center>
-                {BtnNum && (
-                      <div className="resumo-curtidas">
-                <h2>Nossas Pesquisas</h2>
-
-      
-      </div>
-    )}
+             
   
    
 

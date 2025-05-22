@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import "./header.css";
 
+import BtnEscuro from "./botaoEscuro";
+
 import logo from "../assets/logoSeculoChamas.png"; // Importe a imagem do logo
 
 function Header(props) {
@@ -63,6 +65,8 @@ function Header(props) {
              <li><Link to="/revolucao-1930">Revolução de 1930</Link></li>
              <li><Link to="/ranking">Ranking </Link></li>
                     </ul>
+
+                    <BtnEscuro />
                 </nav>
             )}
         </>

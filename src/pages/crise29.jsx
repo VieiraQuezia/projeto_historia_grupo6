@@ -6,7 +6,6 @@ import Footer from "../components/footer";
 import CardText from "../components/cartText";
 import BtnCurtida from "../components/botaoCurtida";
 import CardWikipedia from "../components/wikipedia";
-import BotaoEscuro from "../components/botaoEscuro";
 
 import Img1 from "../assets/conflitosSecXX/crise1929/1crise29.png";
 import Img2 from "../assets/conflitosSecXX/crise1929/2crise29.png";
@@ -16,7 +15,6 @@ function Home() {
   return (
     <>
       <Header titulo="Crise de 1929" />
-      <BotaoEscuro />
       <CardText
         texto="  A Crise de 1929, que ficou conhecida como a Grande Depressão, foi uma forte degradação da economia, que ocorreu no final da década de 1920. O liberalismo econômico decaiu naquele momento, e as causas dessa crise foram a superprodução da indústria americana e especulação financeira.
 
