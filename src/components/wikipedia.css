@@ -59,7 +59,18 @@
     width: 60%;
   }
 
-  .card-content h2 {
-    font-size: 22px;
-  }
+  .card-content  {
+font-size: 2vw;  
+}
+
+  .card-content  h2{
+font-size: 4vw;  
+}
+  .card-content  h1{
+font-size: 5vw;  
+}
+
+
+
+
 }

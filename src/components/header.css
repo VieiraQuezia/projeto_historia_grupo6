@@ -97,12 +97,20 @@ border-color: #849cc8;
 /* Responsividade para telas pequenas */
 @media (max-width: 1024px) {
   .headerBox h1 {
-    font-size: 150%;
+    font-size: 3.5vw;
     text-align: center;
   }
 
+ .headerBox img{
+
+
+  width: 20%;
+
+
+ }
+
   .bx-menu {
-    font-size: 8vw;
+    font-size: 4vw;
         transition: all 2s;
 
   }
@@ -123,7 +131,7 @@ border-color: #849cc8;
   }
 
   .menu ul {
-    width: 100%;
+    width: 50%;
   }
 
   .menu li {
