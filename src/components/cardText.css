@@ -106,7 +106,9 @@ padding-bottom: 15%;
 
   
   .card img.static-img {
-    width: 40%;
+    width: 20%;
+    height: 10%;
+    margin-top: 20%;
   }
 
   .card-content h2 {
