@@ -31,10 +31,7 @@ const ResumoCurtidas = () => {
         };
     }, []);
 
-    const toggleBtn = () => {
-        setBtnNum((prev) => !prev);
-    };
-
+    
 
 
 
