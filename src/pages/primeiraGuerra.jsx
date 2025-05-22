@@ -14,6 +14,7 @@ function Home() {
   return (
     <>
       <Header titulo="Primeira Guerra Mundial" />
+      <BtnCurtida id="Primeira-Guerra-Mundial" />
 
       <CardText
         id="topic1"
@@ -72,7 +73,6 @@ function Home() {
         img={Img3}
       />
 
-      <BtnCurtida id="Primeira-Guerra-Mundial" />
 
       <CardWikipedia termoBusca="Primeira Guerra Mundial" />
 

@@ -15,10 +15,9 @@
 /* -------------------------------------------------------------------------- */
 .container {
   display: flex;
-  min-height: 100vh;
   background-color: #f3f4f6;
   font-family: sans-serif;
-  padding-top: 10%;
+  padding-top: 3%;
   flex-wrap: wrap;
 }
 
@@ -30,7 +29,6 @@
 .side-nav h3 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 16px;
 }
 
 .carousel-img {
@@ -42,17 +40,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.anuncio-img {
-  width: 100%;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
 .main-nav {
-  padding: 24px;
-  padding-top: 10%;
   flex: 1;
 }
 

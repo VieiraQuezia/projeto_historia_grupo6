@@ -15,6 +15,8 @@ function Home() {
   return (
     <>
       <Header titulo="Crise de 1929" />
+            <BtnCurtida id="Crise-de-1929" />
+
       <CardText
         texto="  A Crise de 1929, que ficou conhecida como a Grande Depressão, foi uma forte degradação da economia, que ocorreu no final da década de 1920. O liberalismo econômico decaiu naquele momento, e as causas dessa crise foram a superprodução da indústria americana e especulação financeira.
 
@@ -38,7 +40,6 @@ Em 1933, o acordo criado para restaurar a economia foi chamado de New Deal, cria
         img={Img3}
       />
 
-      <BtnCurtida id="Crise-de-1929" />
 
       <CardWikipedia termoBusca="Crise de 1929" />
 

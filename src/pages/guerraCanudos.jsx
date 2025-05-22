@@ -15,6 +15,7 @@ function Home() {
   return (
     <>
       <Header titulo="Guerra de Canudos" />
+      <BtnCurtida id="Guerra-Canudos" />
 
       <CardText
         texto="     A Guerra de Canudos foi um dos principais conflitos que marcaram
@@ -74,7 +75,6 @@ function Home() {
         img={Img2}
       />
 
-      <BtnCurtida id="Guerra-Canudos" />
 
       <CardWikipedia termoBusca="Guerra de Canudos" />
 

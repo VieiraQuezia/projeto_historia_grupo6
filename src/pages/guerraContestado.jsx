@@ -16,6 +16,7 @@ function Home() {
   return (
     <>
       <Header titulo="Guerra do Contestado" />
+      <BtnCurtida id='Guerra-Contestado' />
 
       <CardText
         texto="      A Guerra do Contestado foi um conflito ocorrido de 1912 a 1916
@@ -53,7 +54,6 @@ function Home() {
         img={Img2}
       />
 
-      <BtnCurtida id='Guerra-Contestado' />
 
       <CardWikipedia termoBusca="Guerra do Contestado" />
 

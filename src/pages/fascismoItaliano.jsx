@@ -14,6 +14,7 @@ function Home() {
   return (
     <>
       <Header titulo="Fascismo na Itália" />
+      <BtnCurtida id="Fascismo-Italiano" />
 
       <CardText
         texto="      O fascismo na Itália foi um período em que esse país foi
@@ -54,7 +55,6 @@ function Home() {
         img={Img2}
       />
 
-      <BtnCurtida id="Fascismo-Italiano" />
 
       <CardWikipedia termoBusca="Fascismo na Itália" />
 

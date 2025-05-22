@@ -17,6 +17,7 @@ function Home() {
   return (
     <>
       <Header titulo="Revolução Russa" />
+      <BtnCurtida id="Revolução-Russa" />
 
       <CardText
         texto="A Revolução Russa, ocorrida em 1917,foi responsável por derrubar a monarquia czarista e estabelecer o primeiro regime socialista mundial. O movimento se iniciou devido a desigualdades sociais estruturais, um regime político absolutista e uma economia baseada na exploração de toda a classe camponesa e trabalhadora. O conflito cresceu consideravelmente durante a participação do país na Primeira Guerra Mundial, fome, inflação monetária e mortes em milhões."
@@ -32,7 +33,8 @@ function Home() {
         img={Img3}
       />
 
-      <BtnCurtida id="Revolução-Russa" />
+
+      <CardWikipedia termoBusca="Revolução Russa" />
 
 
       <center>

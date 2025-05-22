@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+[data-theme="dark"] body{
+  background-color: #a5d5ff;
+  transition: all 1s ease;
+}
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -130,7 +134,6 @@ border: 2px solid #8C1C13;
   
   max-width: 960px;
   margin: 0 auto;
-  background-color: #e7460c;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
