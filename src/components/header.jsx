@@ -56,7 +56,6 @@ function Header(props) {
                 <nav className="menu" ref={menuRef}>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to='/producaoautoral'>Produção Autoral - Crise de 1929</Link></li>
                         <li><Link to="/canudos">Guerra de Canudos</Link></li>
              <li><Link to="/contestado">Guerra do Contestado</Link></li>
              <li><Link to="/primeira-guerra">Primeira Guerra Mundial</Link></li>
@@ -65,6 +64,8 @@ function Header(props) {
              <li><Link to="/crise-29">Crise de 1929</Link></li>
              <li><Link to="/revolucao-1930">Revolução de 1930</Link></li>
              <li><Link to="/ranking">Ranking </Link></li>
+                                     <li><Link to='/producaoautoral'>Produção Autoral - Crise de 1929</Link></li>
+
                     </ul>
 
                     <BtnEscuro />

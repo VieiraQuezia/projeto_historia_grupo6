@@ -5,7 +5,9 @@
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
+iframe{
+  padding: 5%;
+}
 
 
 .banner {
@@ -128,7 +130,7 @@ border: 2px solid #8C1C13;
   
   max-width: 960px;
   margin: 0 auto;
-  background-color: #A78A7F;
+  background-color: #e7460c;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

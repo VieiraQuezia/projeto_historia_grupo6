@@ -4,8 +4,8 @@ import "./zpages.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import CardText from "../components/cartText";
-import BtnCurtida from "../components/botaoCurtida";
-import CardWikipedia from "../components/wikipedia";
+import Img1 from '../assets/nossaBandeira.png';
+
 
 function Home() {
   return (
@@ -34,29 +34,33 @@ function Home() {
       </div>
       <br />
       <br />
-      <div className="card">
-        <div className="card-content">
-          <h2>Apresentação do Projeto</h2>
-          <br />
-          <center>
-            <p>
-              A Revolução de 1930 foi um movimento armado de alcance nacional,
-              liderado por Getúlio Vargas, então governador do Rio Grande do
-              Sul. Esse levante resultou na deposição do presidente Washington
-              Luís e impediu a posse do presidente eleito Júlio Prestes,
-              encerrando a chamada República Oligárquica e iniciando o Governo
-              Provisório sob o comando de Vargas. As principais causas incluem a
-              Política do Café com Leite, acordo informal de alternância no
-              poder entre as oligarquias de São Paulo (produtores de café) e
-              Minas Gerais (produtores de leite), dominando a presidência do
-              país. Em 1930, o presidente Washington Luís, paulista, rompeu o
-              pacto ao apoiar outro paulista, Júlio Prestes, como sucessor,
-              contrariando as expectativas de Minas Gerais. Em resposta, Minas
-              Gerais
-            </p>
-          </center>
-        </div>
-      </div>
+
+      <CardText
+        texto='    O "Projeto Integrado História XX" é uma iniciativa educacional
+                 colaborativa entre o SESI e o SENAI, envolvendo alunos do 3º ano
+                 do Ensino Médio do SESI Vinhedo estudantes do curso técnico em
+                 Desenvolvimento de Sistemas do SENAI Valinhos. Com orientação de
+                 Profª Julia Milani (História), Prof° Antonio Tupinambá e Prof°
+                 Leandro Grosso (Desenvolvimento de Sistemas), o projeto visa
+                 integrar conhecimentos de História e Tecnologia por meio do
+                 desenvolvimento de páginas web temáticas. A proposta pedagógica
+                 foca nos principais acontecimentos do século XX, divididos em
+                 sete grandes temas: Guerra de Canudos, Guerra do Contestado,
+                 Primeira Guerra Mundial, Revolução Russa, Fascismo Italiano,
+                 Crise de 1929 e Revolução de 1930. Cada grupo de alunos é
+                 responsável por criar uma página web que explore esses eventos
+                 históricos. Além disso, são incentivados a incorporar imagens
+                 para enriquecer o conteúdo visual das páginas. O projeto é
+                 estruturado para promover a interdisciplinaridade, permitindo
+                 que os alunos apliquem habilidades técnicas de desenvolvimento
+                 de sistemas na criação de recursos educacionais digitais. Essa
+                 abordagem prática visa não apenas aprofundar o entendimento dos
+                 eventos históricos, mas também desenvolver competências
+                 tecnológicas relevantes, como React e consumo de APIs. Para mais
+                 informações e acesso aos materiais desenvolvidos pelos grupos.'
+        img={Img1}
+      />
+     
       <br />
       <br />
 
