@@ -84,16 +84,13 @@ const ResumoCurtidas = () => {
     <>
       <Header titulo="Ranking de Curtidas" />
                <div className="resumo-curtidas">
-                <h2>Nossas Pesquisas</h2>
 
         <h2>Ranking de Curtidas</h2>
         <ul>
           {paginasOrdenadas.map(formatarLinha)}
         </ul>
       </div>
-      <center>
-<button onClick={toggleBtn} className="BtnNum">{BtnNum ? ' Fechar o numero de curtidas' : 'Ver Numero de curtidas' }</button>
-</center>
+      
              
   
    
