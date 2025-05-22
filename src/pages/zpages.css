@@ -117,7 +117,46 @@ border: 2px solid #8C1C13;
 
 }
 
+/* PRODUÇÃO AUTORAL */
 
+.card {
+  display: flex;
+  
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #A78A7F;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.card img.static-img {
+  padding-top: 10%;
+  padding-left: 5%;
+  width: 40%;
+  height: 50%;
+}
+
+.card-content {
+  width: 50%;
+  padding: 24px;
+  
+}
+
+.card-content h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.card-content p {
+  
+  line-height: 1.5;
+}
 
 /* ======================= RESPONSIVO ======================= */
 @media (max-width: 600px) {
