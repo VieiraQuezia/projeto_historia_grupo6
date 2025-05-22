@@ -10,6 +10,14 @@
     <script src="https://kit.fontawesome.com/8fdd7c27fd.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <script>
+  (function() {
+    const tema = localStorage.getItem('tema') || 'light';
+    document.documentElement.setAttribute('data-theme', tema);
+  })();
+</script>
+
     <title>Projeto de História do Século XX</title>
   </head>
   <body>

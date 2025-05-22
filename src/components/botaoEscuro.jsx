@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import "./botaoEscuro.css";
 
 const MudarTema = () => {
-  const temaSalvo = localStorage.getItem('tema') || 'light';
-  const [tema, setTema] = useState(temaSalvo);
+  const temaSalvo = localStorage.getItem('tema');
+  const [tema, setTema] = useState(temaSalvo || 'light');
 
   useEffect(() => {
     localStorage.setItem('tema', tema);
