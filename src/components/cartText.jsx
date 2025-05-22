@@ -14,7 +14,7 @@ const CardComNav = (props) => {
 
       {/* Card principal */}
 
-      <nav className="main-nav" id={props.id}>
+      <nav className="main-nav" >
         
           <h2 className="title">{props.titulo}</h2>
 
@@ -24,10 +24,7 @@ const CardComNav = (props) => {
           <div className="card-content">
 
             <p className="card-text">{props.texto}</p>
-            <br />
-            <p className="card-text">{props.texto2}</p>
-            <br />
-            <p className="card-text">{props.texto3}</p>
+          
 
           </div>
 

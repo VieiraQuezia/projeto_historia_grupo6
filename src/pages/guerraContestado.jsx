@@ -16,6 +16,7 @@ function Home() {
   return (
     <>
       <Header titulo="Guerra do Contestado" />
+      
       <BtnCurtida id='Guerra-Contestado' />
 
       <CardText

@@ -2,7 +2,7 @@ import "./zpages.css";
 // Import das imagens
 import Img1 from "../assets/conflitosSecXX/revolucaoRussa/img1.png";
 import Img2 from "../assets/conflitosSecXX/revolucaoRussa/img4.jpg";
-import Img3 from "../assets/conflitosSecXX/revolucaoRussa/img4.jpg";
+import Img3 from "../assets/conflitosSecXX/revolucaoRussa/img2.jpg";
 
 // Componentes
 import Header from "../components/header";

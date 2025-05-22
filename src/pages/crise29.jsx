@@ -23,6 +23,8 @@ function Home() {
 Os Estados Unidos já era considerado o país com maior economia do mundo e após a Primeira Guerra Mundial, o crescimento da economia americana ficou muito evidente, tudo isso em 1920, tanto que esse ano marcou o avanço do consumo de mercadorias, esse estilo de vida americano foi chamado de “American Way Of Life”. O país ficou responsável por 40% das importações, pela produção de 42% das mercadorias realizadas no mundo inteiro e também emprestou grandes quantias de dinheiro para países europeus que necessitavam de auxílio por conta da Primeira Guerra Mundial.
 
 O consumo da população ficou muito acelerado, o que acabou elevando as compras de maneira desenfreada, esse consumo excessivo se baseou em parte no aumento do crédito que acontecia no país, que não tinha nenhum tipo de regulação ou intervenção estatal. "
+
+texto2='loremiwuebfoaeiyrgbeaiyrvboq5ey8g5'
         img={Img1}
       />
 
