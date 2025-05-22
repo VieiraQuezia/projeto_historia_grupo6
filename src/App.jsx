@@ -16,6 +16,7 @@ import FascismoItaliano from "./pages/fascismoItaliano";
 import Revolucao30 from "./pages/revolucao30";
 import Crise29 from "./pages/crise29";
 import Ranking from "./pages/ranking";
+import Producao from "./pages/producaoAutoral";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/revolucao-1930" element={<Revolucao30 />} />
           <Route path="/crise-29" element={<Crise29 />} />
           <Route path="/ranking" element={<Ranking />} />
+          <Route path="/producaoautoral" element={<Producao/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
