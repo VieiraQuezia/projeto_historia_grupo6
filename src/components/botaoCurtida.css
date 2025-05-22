@@ -11,7 +11,6 @@
 .btn-nao-curtir {
   background-color: #1976d2;
   color: #fff;
-  border: none;
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -32,7 +31,7 @@
 }
 
 .btn-curtida-contador {
-  font-weight: bold;
+  font-weight:bold;
   font-size: 16px;
 }
 

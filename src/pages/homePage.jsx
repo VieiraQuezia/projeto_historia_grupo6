@@ -39,9 +39,9 @@ function Home() {
                  informações e acesso aos materiais desenvolvidos pelos grupos.'
         img={Img1}
       />
-       
+      
 <center>
-      <a className=""  href="https://sites.google.com/docente.senai.br/projeto-integrado-historia-xx/home?authuser=0.'"> <h2> Visite o site oficial do projeto</h2></a>
+      <a target="_blank" href="https://sites.google.com/docente.senai.br/projeto-integrado-historia-xx/home?authuser=0.'"> <h2> Visite o site oficial do projeto</h2></a>
 </center>
 <br />
       <Footer />
