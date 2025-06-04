@@ -4,8 +4,7 @@ import "./zpages.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import CardText from "../components/cartText";
-import Img1 from '../assets/nossaBandeira.png';
-
+import Img1 from "../assets/nossaBandeira.png";
 
 function Home() {
   return (
@@ -22,12 +21,12 @@ function Home() {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/Y3LnoYmqWHU?si=XIUu0NXT7cfyYDb0"
+              src="https://www.youtube.com/embed/yrzXApIz7UE?si=PJJHsjzHPlq9Zg0i"
               title="YouTube video player"
-              frameBorder="0"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
             ></iframe>
           </center>
         </div>
@@ -60,7 +59,7 @@ function Home() {
                  informações e acesso aos materiais desenvolvidos pelos grupos.'
         img={Img1}
       />
-     
+
       <br />
       <br />
 
