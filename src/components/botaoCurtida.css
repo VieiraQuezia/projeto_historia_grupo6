@@ -34,3 +34,15 @@
   font-weight:bold;
   font-size: 16px;
 }
+
+@media (max-width: 1024px) {
+
+
+.btn-nao-curtir{
+  font-size: 2vw;
+}
+.btn-curtir{
+  font-size: 2vw;
+}
+
+}
